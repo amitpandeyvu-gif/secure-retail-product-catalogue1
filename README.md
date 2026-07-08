@@ -1,49 +1,67 @@
 # Secure Retail Product Catalogue
 
 ## Project Overview
-This project is a frontend web application for Pop Culture Clothing. It allows customers to browse products, view product details, and contact the business. The system also includes an admin portal for managing products, prices, and sale offers.
 
-## Main Features
-- Home Page
-- About Page
-- Contact Page
-- Product Catalogue
-- Product Details
-- Responsive Navigation
-- Admin Login
-- Add Product
-- Edit Product Price
-- Sale Offer Management
+This project was developed for Pop Culture Clothing.
 
-## Technologies Used
-- HTML
-- CSS
-- JavaScript
+The aim is to provide customers with an easy-to-use online product catalogue while allowing administrators to manage products efficiently.
+
+---
+
+## Sprint 3 Features
+
+✅ Home Page
+
+✅ About Page
+
+✅ Contact Page
+
+✅ Navigation Menu
+
+✅ Responsive Design
+
+✅ Shared CSS
+
+---
+
+## Technologies
+
+- HTML5
+- CSS3
 - GitHub
-- Supabase
-- VS Code
+- Agile Development
+
+---
 
 ## Team Members
-- Amit Pandey – Group Leader
-- Sujal – Frontend Developer
-- Manish – UI Designer
-- Manoj – GitHub Collaborator
-- Nabin – Developer
-- Ashok – Code Reviewer
 
-## Sprint 3 Progress
-- Homepage completed
-- About page completed
-- Contact page completed
-- CSS styling applied
-- Navigation working
-- Responsive design implemented
-- Pull requests merged
+| Name | Role |
+|------|------|
+| Amit Pandey | Group Leader |
+| Sujal | Frontend Developer |
+| Manish | UI Designer |
+| Manoj | GitHub Collaboration |
+| Nabin | Developer |
+| Ashok | Code Reviewer |
 
-## Future Improvements
-- Backend integration
-- Database connection
-- Full admin dashboard
-- Customer login
-- Online ordering
-- Payment system
+---
+
+## Project Structure
+
+```
+index.html
+about.html
+contact.html
+style.css
+README.md
+```
+
+---
+
+## Future Development
+
+- Admin Dashboard
+- Product Management
+- Database Integration
+- Customer Login
+- Shopping Cart
