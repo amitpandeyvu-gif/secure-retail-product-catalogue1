@@ -1,0 +1,51 @@
+- generic [active] [ref=e1]:
+  - main [ref=e846]:
+    - generic [ref=e1247]:
+      - generic [ref=e1248]:
+        - img "Fashion" [ref=e1249]
+        - generic [ref=e1250]:
+          - generic [ref=e1251]: POPCULTURE
+          - paragraph [ref=e1252]: "\"Style is a way to say who you are without having to speak.\""
+      - generic [ref=e1254]:
+        - generic [ref=e1255]:
+          - heading "Welcome back" [level=1] [ref=e1256]
+          - paragraph [ref=e1257]: Sign in to your PopCulture account
+        - generic [ref=e1258]:
+          - generic [ref=e1259]:
+            - generic [ref=e1260]: EMAIL OR USER ID
+            - textbox "you@example.com" [ref=e1261]
+          - generic [ref=e1262]:
+            - generic [ref=e1263]:
+              - generic [ref=e1264]: PASSWORD
+              - button "Forgot password?" [ref=e1265]
+            - generic [ref=e1266]:
+              - textbox "Password" [ref=e1267]
+              - button [ref=e1268]:
+                - img [ref=e1269]
+          - generic [ref=e1272]:
+            - generic [ref=e1273] [cursor=pointer]:
+              - checkbox "Keep me signed in" [checked] [ref=e1274]
+              - text: Keep me signed in
+            - generic [ref=e1275]: Role detected after login
+          - button "SIGN IN" [ref=e1276]
+        - generic [ref=e1277]:
+          - generic [ref=e1278]:
+            - paragraph [ref=e1279]: Customer demo
+            - paragraph [ref=e1280]: customer@popculture.com
+            - paragraph [ref=e1281]: customer123
+          - generic [ref=e1282]:
+            - paragraph [ref=e1283]: Admin demo
+            - paragraph [ref=e1284]: admin@popculture.com
+            - paragraph [ref=e1285]: admin123
+        - generic [ref=e1289]: or continue with
+        - generic [ref=e1290]:
+          - button "Google" [ref=e1291]:
+            - img [ref=e1292]
+            - text: Google
+          - button "Facebook" [ref=e1295]:
+            - img [ref=e1296]
+            - text: Facebook
+        - paragraph [ref=e1298]:
+          - text: No account yet?
+          - button "Create one" [ref=e1299]
+  - generic [ref=e802]: Tops

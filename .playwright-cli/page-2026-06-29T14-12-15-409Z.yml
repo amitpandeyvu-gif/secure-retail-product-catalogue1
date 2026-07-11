@@ -1,0 +1,204 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e3]:
+    - complementary [ref=e493]:
+      - generic [ref=e494]:
+        - generic [ref=e495]: POPCULTURE
+        - generic [ref=e496]: Admin Portal
+      - navigation [ref=e497]:
+        - button "Dashboard" [ref=e498]:
+          - img [ref=e499]
+          - text: Dashboard
+        - button "Products" [ref=e502]:
+          - img [ref=e503]
+          - text: Products
+        - button "Categories" [ref=e507]:
+          - img [ref=e508]
+          - text: Categories
+        - button "Orders" [ref=e512]:
+          - img [ref=e513]
+          - text: Orders
+        - button "Customers" [ref=e517]:
+          - img [ref=e518]
+          - text: Customers
+        - button "Inventory" [ref=e523]:
+          - img [ref=e524]
+          - text: Inventory
+        - button "Promotions" [ref=e527]:
+          - img [ref=e528]
+          - text: Promotions
+        - button "Reviews" [ref=e531]:
+          - img [ref=e532]
+          - text: Reviews
+        - button "Analytics" [ref=e534]:
+          - img [ref=e535]
+          - text: Analytics
+        - button "Settings" [ref=e536]:
+          - img [ref=e537]
+          - text: Settings
+      - generic [ref=e540]:
+        - button "Profile" [ref=e541]:
+          - img [ref=e542]
+          - text: Profile
+        - button "Sign Out" [ref=e545]:
+          - img [ref=e546]
+          - text: Sign Out
+    - generic [ref=e549]:
+      - generic [ref=e550]:
+        - heading "Dashboard" [level=1] [ref=e551]
+        - generic [ref=e552]:
+          - button [ref=e553]:
+            - img [ref=e554]
+          - button "AD" [ref=e558]
+      - generic [ref=e559]:
+        - generic [ref=e560]:
+          - generic [ref=e561]:
+            - generic [ref=e562]:
+              - img [ref=e564]
+              - generic [ref=e566]: +18.2%
+            - paragraph [ref=e567]: $127,430
+            - paragraph [ref=e568]: Total Revenue
+          - generic [ref=e569]:
+            - generic [ref=e570]:
+              - img [ref=e572]
+              - generic [ref=e576]: +12.5%
+            - paragraph [ref=e577]: "980"
+            - paragraph [ref=e578]: Orders
+          - generic [ref=e579]:
+            - generic [ref=e580]:
+              - img [ref=e582]
+              - generic [ref=e587]: +8.3%
+            - paragraph [ref=e588]: 14,820
+            - paragraph [ref=e589]: Customers
+          - generic [ref=e590]:
+            - generic [ref=e591]:
+              - img [ref=e593]
+              - generic [ref=e596]: +0.8%
+            - paragraph [ref=e597]: 3.42%
+            - paragraph [ref=e598]: Conversion
+          - generic [ref=e599]:
+            - generic [ref=e600]:
+              - img [ref=e602]
+              - generic [ref=e603]: +5.1%
+            - paragraph [ref=e604]: $130
+            - paragraph [ref=e605]: Avg Order Value
+          - generic [ref=e606]:
+            - generic [ref=e607]:
+              - img [ref=e609]
+              - generic [ref=e611]: "-2"
+            - paragraph [ref=e612]: "3"
+            - paragraph [ref=e613]: Low Stock Items
+        - generic [ref=e614]:
+          - generic [ref=e615]:
+            - generic [ref=e616]:
+              - heading "Revenue Overview" [level=2] [ref=e617]
+              - combobox [ref=e618]:
+                - option "Last 12 months" [selected]
+                - option "Last 6 months"
+                - option "Last 3 months"
+            - img [ref=e621]:
+              - generic [ref=e626]:
+                - generic [ref=e628]: Jan
+                - generic [ref=e630]: Feb
+                - generic [ref=e632]: Mar
+                - generic [ref=e634]: Apr
+                - generic [ref=e636]: May
+                - generic [ref=e638]: Jun
+                - generic [ref=e640]: Jul
+                - generic [ref=e642]: Aug
+                - generic [ref=e644]: Sep
+                - generic [ref=e646]: Oct
+                - generic [ref=e648]: Nov
+                - generic [ref=e650]: Dec
+              - generic [ref=e652]:
+                - generic [ref=e654]: $0k
+                - generic [ref=e656]: $35k
+                - generic [ref=e658]: $70k
+                - generic [ref=e660]: $105k
+                - generic [ref=e662]: $140k
+          - generic [ref=e669]:
+            - heading "Order Status" [level=2] [ref=e670]
+            - img [ref=e673]:
+              - generic [ref=e675]:
+                - img [ref=e677]
+                - img [ref=e679]
+                - img [ref=e681]
+                - img [ref=e683]
+            - generic [ref=e684]:
+              - generic [ref=e685]:
+                - generic [ref=e688]: Delivered
+                - generic [ref=e689]: 68%
+              - generic [ref=e690]:
+                - generic [ref=e693]: Processing
+                - generic [ref=e694]: 18%
+              - generic [ref=e695]:
+                - generic [ref=e698]: Shipped
+                - generic [ref=e699]: 10%
+              - generic [ref=e700]:
+                - generic [ref=e703]: Cancelled
+                - generic [ref=e704]: 4%
+        - generic [ref=e705]:
+          - generic [ref=e706]:
+            - generic [ref=e707]:
+              - heading "Recent Orders" [level=2] [ref=e708]
+              - button "View all" [ref=e709]
+            - table [ref=e710]:
+              - rowgroup [ref=e711]:
+                - row "Order Customer Date Amount Status" [ref=e712]:
+                  - columnheader "Order" [ref=e713]
+                  - columnheader "Customer" [ref=e714]
+                  - columnheader "Date" [ref=e715]
+                  - columnheader "Amount" [ref=e716]
+                  - columnheader "Status" [ref=e717]
+              - rowgroup [ref=e718]:
+                - row "PC-2024-583 Emma Williams Jun 29, 2024 $319 processing" [ref=e719]:
+                  - cell "PC-2024-583" [ref=e720]
+                  - cell "Emma Williams" [ref=e721]
+                  - cell "Jun 29, 2024" [ref=e722]
+                  - cell "$319" [ref=e723]
+                  - cell "processing" [ref=e724]:
+                    - generic [ref=e725]: processing
+                - row "PC-2024-582 James Rodriguez Jun 29, 2024 $229 shipped" [ref=e726]:
+                  - cell "PC-2024-582" [ref=e727]
+                  - cell "James Rodriguez" [ref=e728]
+                  - cell "Jun 29, 2024" [ref=e729]
+                  - cell "$229" [ref=e730]
+                  - cell "shipped" [ref=e731]:
+                    - generic [ref=e732]: shipped
+                - row "PC-2024-581 Sarah Johnson Jun 28, 2024 $349 delivered" [ref=e733]:
+                  - cell "PC-2024-581" [ref=e734]
+                  - cell "Sarah Johnson" [ref=e735]
+                  - cell "Jun 28, 2024" [ref=e736]
+                  - cell "$349" [ref=e737]
+                  - cell "delivered" [ref=e738]:
+                    - generic [ref=e739]: delivered
+                - row "PC-2024-580 Olivia Brown Jun 28, 2024 $299 delivered" [ref=e740]:
+                  - cell "PC-2024-580" [ref=e741]
+                  - cell "Olivia Brown" [ref=e742]
+                  - cell "Jun 28, 2024" [ref=e743]
+                  - cell "$299" [ref=e744]
+                  - cell "delivered" [ref=e745]:
+                    - generic [ref=e746]: delivered
+                - row "PC-2024-579 Michael Chen Jun 27, 2024 $189 shipped" [ref=e747]:
+                  - cell "PC-2024-579" [ref=e748]
+                  - cell "Michael Chen" [ref=e749]
+                  - cell "Jun 27, 2024" [ref=e750]
+                  - cell "$189" [ref=e751]
+                  - cell "shipped" [ref=e752]:
+                    - generic [ref=e753]: shipped
+          - generic [ref=e754]:
+            - heading "Sales by Category" [level=2] [ref=e755]
+            - img [ref=e758]:
+              - generic [ref=e762]:
+                - generic [ref=e764]: 0k
+                - generic [ref=e766]: 2k
+                - generic [ref=e768]: 3k
+                - generic [ref=e770]: 5k
+                - generic [ref=e772]: 6k
+              - generic [ref=e774]:
+                - generic [ref=e776]: Tops
+                - generic [ref=e778]: Bottoms
+                - generic [ref=e780]: Footwear
+                - generic [ref=e782]: Outerwear
+                - generic [ref=e784]: Accessories
+                - generic [ref=e786]: Dresses
+  - generic [ref=e802]: Tops
