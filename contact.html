@@ -17,25 +17,60 @@
     </nav>
   </header>
 
-  <main class="content">
-    <h2>Contact Us</h2>
-    <p>Please fill out the form below to contact Pop Culture Clothing.</p>
+  <main class="content contact-page">
+    <section class="contact-hero">
+      <p class="hero-badge">Need help with an order?</p>
+      <h2>Contact the Pop Culture Clothing team</h2>
+      <p>Reach out for product enquiries, custom orders, or support. We reply quickly and make it easy to get the right help.</p>
+    </section>
 
-    <form>
-      <label>Name</label>
-      <input type="text" placeholder="Enter your name">
+    <div class="contact-wrapper">
+      <section class="contact-card contact-info">
+        <h3>Get in Touch</h3>
+        <p>Visit our store or message us with your preferences and we will guide you through the best option.</p>
+        <ul class="contact-details">
+          <li><strong>Email:</strong> hello@popcultureclothing.com</li>
+          <li><strong>Phone:</strong> +61 2 5555 0101</li>
+          <li><strong>Location:</strong> 12 Market Street, Sydney NSW</li>
+        </ul>
+        <div class="support-pills">
+          <span>Fast response</span>
+          <span>Order support</span>
+          <span>Custom requests</span>
+        </div>
+      </section>
 
-      <label>Email</label>
-      <input type="email" placeholder="Enter your email">
+      <section class="contact-card">
+        <form class="contact-form">
+          <div class="form-row">
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" placeholder="Enter your name" required>
+          </div>
 
-      <label>Phone</label>
-      <input type="tel" placeholder="Enter your phone number">
+          <div class="form-row">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" placeholder="Enter your email" required>
+          </div>
 
-      <label>Message</label>
-      <textarea rows="5" placeholder="Write your message"></textarea>
+          <div class="form-row">
+            <label for="phone">Phone Number</label>
+            <input id="phone" name="phone" type="tel" placeholder="Enter your phone number" required>
+          </div>
 
-      <button type="submit">Submit</button>
-    </form>
+          <div class="form-row">
+            <label for="subject">Subject</label>
+            <input id="subject" name="subject" type="text" placeholder="What do you want to discuss?">
+          </div>
+
+          <div class="form-row">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Write your message" required></textarea>
+          </div>
+
+          <button type="submit" class="btn">Send Message</button>
+        </form>
+      </section>
+    </div>
   </main>
 
   <footer>
