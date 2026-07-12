@@ -1,0 +1,93 @@
+- generic [ref=e1]:
+  - generic [ref=e3]:
+    - complementary [ref=e493]:
+      - generic [ref=e494]:
+        - generic [ref=e495]: POPCULTURE
+        - generic [ref=e496]: Admin Portal
+      - navigation [ref=e497]:
+        - button "Dashboard" [ref=e498]:
+          - img [ref=e499]
+          - text: Dashboard
+        - button "Products" [ref=e502]:
+          - img [ref=e503]
+          - text: Products
+        - button "Categories" [ref=e507]:
+          - img [ref=e508]
+          - text: Categories
+        - button "Orders" [ref=e512]:
+          - img [ref=e513]
+          - text: Orders
+        - button "Customers" [ref=e517]:
+          - img [ref=e518]
+          - text: Customers
+        - button "Inventory" [ref=e523]:
+          - img [ref=e524]
+          - text: Inventory
+        - button "Promotions" [ref=e527]:
+          - img [ref=e528]
+          - text: Promotions
+        - button "Reviews" [ref=e531]:
+          - img [ref=e532]
+          - text: Reviews
+        - button "Analytics" [ref=e534]:
+          - img [ref=e535]
+          - text: Analytics
+        - button "Settings" [ref=e536]:
+          - img [ref=e537]
+          - text: Settings
+      - generic [ref=e540]:
+        - button "Profile" [active] [ref=e541]:
+          - img [ref=e542]
+          - text: Profile
+        - button "Sign Out" [ref=e545]:
+          - img [ref=e546]
+          - text: Sign Out
+    - generic [ref=e811]:
+      - generic [ref=e812]:
+        - heading "Admin Profile" [level=1] [ref=e813]
+        - generic [ref=e814]:
+          - button [ref=e815]:
+            - img [ref=e816]
+          - button "AP" [ref=e820]
+      - generic [ref=e821]:
+        - generic [ref=e822]:
+          - generic [ref=e823]:
+            - generic [ref=e824]:
+              - generic [ref=e825]: AP
+              - button [ref=e826]:
+                - img [ref=e827]
+            - generic [ref=e830]:
+              - paragraph [ref=e831]: Amit Pandey
+              - paragraph [ref=e832]: Super Administrator
+              - generic [ref=e833]: SUPER ADMIN
+          - generic [ref=e834]:
+            - generic [ref=e835]:
+              - generic [ref=e836]:
+                - generic [ref=e837]: FIRST NAME
+                - textbox [ref=e838]: Amit
+              - generic [ref=e839]:
+                - generic [ref=e840]: LAST NAME
+                - textbox [ref=e841]: Pandey
+            - generic [ref=e842]:
+              - generic [ref=e843]: EMAIL
+              - textbox [ref=e844]: amit@popculture.com
+            - generic [ref=e845]:
+              - generic [ref=e846]: ROLE
+              - textbox [disabled] [ref=e847]: Super Administrator
+          - button "SAVE CHANGES" [ref=e848]
+        - generic [ref=e849]:
+          - heading "Recent Activity" [level=2] [ref=e850]
+          - generic [ref=e851]:
+            - generic [ref=e854]:
+              - paragraph [ref=e855]: "Updated product: Oversized Wool Blazer"
+              - paragraph [ref=e856]: 2 hours ago
+            - generic [ref=e859]:
+              - paragraph [ref=e860]: Processed refund for order PC-2024-578
+              - paragraph [ref=e861]: 5 hours ago
+            - generic [ref=e864]:
+              - paragraph [ref=e865]: Added new promotional code SUMMER30
+              - paragraph [ref=e866]: Yesterday at 3:41 PM
+            - generic [ref=e869]:
+              - paragraph [ref=e870]: Exported customer data report
+              - paragraph [ref=e871]: Jun 28, 2024
+  - generic [ref=e802]: Dresses

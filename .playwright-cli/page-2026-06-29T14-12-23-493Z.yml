@@ -1,0 +1,351 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e3]:
+    - banner [ref=e811]:
+      - generic [ref=e812]:
+        - generic [ref=e813]:
+          - navigation [ref=e814]:
+            - button "Shop" [ref=e815]
+            - button "New In" [ref=e816]
+            - button "Sale" [ref=e817]
+            - button "About" [ref=e818]
+          - button "POPCULTURE" [ref=e819]
+          - generic [ref=e820]:
+            - button [ref=e821]:
+              - img [ref=e822]
+            - button [ref=e825]:
+              - img [ref=e826]
+            - button "3" [ref=e829]:
+              - img [ref=e830]
+              - generic [ref=e832]: "3"
+            - button "2" [ref=e833]:
+              - img [ref=e834]
+              - generic [ref=e837]: "2"
+        - navigation [ref=e838]:
+          - button "Women" [ref=e839]
+          - button "Men" [ref=e840]
+          - button "Streetwear" [ref=e841]
+          - button "Footwear" [ref=e842]
+          - button "Accessories" [ref=e843]
+          - button "Dresses" [ref=e844]
+          - button "Sale" [ref=e845]
+    - main [ref=e846]:
+      - generic [ref=e847]:
+        - generic [ref=e848]:
+          - img "Hero" [ref=e849]
+          - generic [ref=e852]:
+            - paragraph [ref=e853]: New Season — SS25
+            - heading "Culture Defines Style." [level=1] [ref=e854]:
+              - text: Culture
+              - text: Defines
+              - text: Style.
+            - paragraph [ref=e855]: Explore the new season collection — pieces built to last, designed to define.
+            - generic [ref=e856]:
+              - button "SHOP NOW" [ref=e857]
+              - button "VIEW LOOKBOOK" [ref=e858]
+        - generic [ref=e860]:
+          - generic [ref=e861]: FREE SHIPPING ON ORDERS OVER $150
+          - generic [ref=e862]: ·
+          - generic [ref=e863]: NEW ARRIVALS EVERY FRIDAY
+          - generic [ref=e864]: ·
+          - generic [ref=e865]: 30-DAY RETURNS
+          - generic [ref=e866]: ·
+          - generic [ref=e867]: SHOP THE SUMMER SALE — UP TO 40% OFF
+          - generic [ref=e868]: ·
+          - generic [ref=e869]: FREE SHIPPING ON ORDERS OVER $150
+          - generic [ref=e870]: ·
+          - generic [ref=e871]: NEW ARRIVALS EVERY FRIDAY
+          - generic [ref=e872]: ·
+          - generic [ref=e873]: 30-DAY RETURNS
+          - generic [ref=e874]: ·
+          - generic [ref=e875]: SHOP THE SUMMER SALE — UP TO 40% OFF
+          - generic [ref=e876]: ·
+          - generic [ref=e877]: FREE SHIPPING ON ORDERS OVER $150
+          - generic [ref=e878]: ·
+          - generic [ref=e879]: NEW ARRIVALS EVERY FRIDAY
+          - generic [ref=e880]: ·
+          - generic [ref=e881]: 30-DAY RETURNS
+          - generic [ref=e882]: ·
+          - generic [ref=e883]: SHOP THE SUMMER SALE — UP TO 40% OFF
+          - generic [ref=e884]: ·
+        - generic [ref=e885]:
+          - generic [ref=e886]:
+            - heading "Shop by Category" [level=2] [ref=e887]
+            - button "VIEW ALL" [ref=e888]:
+              - text: VIEW ALL
+              - img [ref=e889]
+          - generic [ref=e891]:
+            - button "Women Women" [ref=e892]:
+              - img "Women" [ref=e893]
+              - generic [ref=e896]: Women
+            - button "Men Men" [ref=e897]:
+              - img "Men" [ref=e898]
+              - generic [ref=e901]: Men
+            - button "Streetwear Streetwear" [ref=e902]:
+              - img "Streetwear" [ref=e903]
+              - generic [ref=e906]: Streetwear
+            - button "Footwear Footwear" [ref=e907]:
+              - img "Footwear" [ref=e908]
+              - generic [ref=e911]: Footwear
+            - button "Accessories Accessories" [ref=e912]:
+              - img "Accessories" [ref=e913]
+              - generic [ref=e916]: Accessories
+            - button "Sale Sale" [ref=e917]:
+              - img "Sale" [ref=e918]
+              - generic [ref=e921]: Sale
+        - generic [ref=e923]:
+          - generic [ref=e924]:
+            - paragraph [ref=e925]: Featured Collection
+            - heading "The Essential Edit SS25" [level=2] [ref=e926]:
+              - text: The Essential
+              - text: Edit SS25
+            - paragraph [ref=e927]: Curated pieces that form the cornerstone of a considered wardrobe. Quiet luxury, enduring quality — each item selected to work harder and last longer.
+            - button "EXPLORE EDIT" [ref=e928]:
+              - text: EXPLORE EDIT
+              - img [ref=e929]
+          - generic [ref=e931]:
+            - img "Collection 1" [ref=e932]
+            - img "Collection 2" [ref=e933]
+        - generic [ref=e934]:
+          - generic [ref=e935]:
+            - generic [ref=e936]:
+              - paragraph [ref=e937]: Just Landed
+              - heading "New Arrivals" [level=2] [ref=e938]
+            - button "SEE ALL" [ref=e939]:
+              - text: SEE ALL
+              - img [ref=e940]
+          - generic [ref=e942]:
+            - generic [ref=e943] [cursor=pointer]:
+              - generic [ref=e944]:
+                - img "Oversized Wool Blazer" [ref=e945]
+                - generic [ref=e946]: NEW
+                - button [ref=e947]:
+                  - img [ref=e948]
+                - button "QUICK ADD" [ref=e950]
+              - generic [ref=e951]:
+                - paragraph [ref=e952]: PopCulture
+                - paragraph [ref=e953]: Oversized Wool Blazer
+                - generic [ref=e955]: $349
+            - generic [ref=e956] [cursor=pointer]:
+              - generic [ref=e957]:
+                - img "Air Force Runner" [ref=e958]
+                - generic [ref=e959]: NEW
+                - button [ref=e960]:
+                  - img [ref=e961]
+                - button "QUICK ADD" [ref=e963]
+              - generic [ref=e964]:
+                - paragraph [ref=e965]: PopCulture
+                - paragraph [ref=e966]: Air Force Runner
+                - generic [ref=e968]: $229
+            - generic [ref=e969] [cursor=pointer]:
+              - generic [ref=e970]:
+                - img "Ribbed Mock-Neck" [ref=e971]
+                - generic [ref=e972]: NEW
+                - button [ref=e973]:
+                  - img [ref=e974]
+                - button "QUICK ADD" [ref=e976]
+              - generic [ref=e977]:
+                - paragraph [ref=e978]: PopCulture
+                - paragraph [ref=e979]: Ribbed Mock-Neck
+                - generic [ref=e981]: $159
+            - generic [ref=e982] [cursor=pointer]:
+              - generic [ref=e983]:
+                - img "Structured Tote" [ref=e984]
+                - generic [ref=e985]: NEW
+                - button [ref=e986]:
+                  - img [ref=e987]
+                - button "QUICK ADD" [ref=e989]
+              - generic [ref=e990]:
+                - paragraph [ref=e991]: PopCulture
+                - paragraph [ref=e992]: Structured Tote
+                - generic [ref=e994]: $259
+        - generic [ref=e995]:
+          - paragraph [ref=e996]: Limited Time
+          - heading "Up to 40% Off" [level=2] [ref=e997]
+          - paragraph [ref=e998]: Shop the season-end sale — selected styles reduced while stocks last.
+          - button "SHOP THE SALE" [ref=e999]
+        - generic [ref=e1000]:
+          - generic [ref=e1002]:
+            - paragraph [ref=e1003]: Most Wanted
+            - heading "Trending Now" [level=2] [ref=e1004]
+          - generic [ref=e1005]:
+            - generic [ref=e1006] [cursor=pointer]:
+              - generic [ref=e1007]:
+                - img "Essential Black Tee" [ref=e1008]
+                - button [ref=e1009]:
+                  - img [ref=e1010]
+                - button "QUICK ADD" [ref=e1012]
+              - generic [ref=e1013]:
+                - paragraph [ref=e1014]: PopCulture
+                - paragraph [ref=e1015]: Essential Black Tee
+                - generic [ref=e1017]: $89
+            - generic [ref=e1018] [cursor=pointer]:
+              - generic [ref=e1019]:
+                - img "Wide-Leg Cargo Pants" [ref=e1020]
+                - generic [ref=e1021]: SALE
+                - button [ref=e1022]:
+                  - img [ref=e1023]
+                - button "QUICK ADD" [ref=e1025]
+              - generic [ref=e1026]:
+                - paragraph [ref=e1027]: PopCulture
+                - paragraph [ref=e1028]: Wide-Leg Cargo Pants
+                - generic [ref=e1029]:
+                  - generic [ref=e1030]: $189
+                  - generic [ref=e1031]: $249
+            - generic [ref=e1032] [cursor=pointer]:
+              - generic [ref=e1033]:
+                - img "Air Force Runner" [ref=e1034]
+                - generic [ref=e1035]: NEW
+                - button [ref=e1036]:
+                  - img [ref=e1037]
+                - button "QUICK ADD" [ref=e1039]
+              - generic [ref=e1040]:
+                - paragraph [ref=e1041]: PopCulture
+                - paragraph [ref=e1042]: Air Force Runner
+                - generic [ref=e1044]: $229
+            - generic [ref=e1045] [cursor=pointer]:
+              - generic [ref=e1046]:
+                - img "Leather Crossbody" [ref=e1047]
+                - generic [ref=e1048]: SALE
+                - button [ref=e1049]:
+                  - img [ref=e1050]
+                - button "QUICK ADD" [ref=e1052]
+              - generic [ref=e1053]:
+                - paragraph [ref=e1054]: PopCulture
+                - paragraph [ref=e1055]: Leather Crossbody
+                - generic [ref=e1056]:
+                  - generic [ref=e1057]: $299
+                  - generic [ref=e1058]: $399
+        - generic [ref=e1060]:
+          - generic [ref=e1061]:
+            - img [ref=e1063]
+            - generic [ref=e1068]:
+              - paragraph [ref=e1069]: Free Shipping
+              - paragraph [ref=e1070]: On orders over $150
+          - generic [ref=e1071]:
+            - img [ref=e1073]
+            - generic [ref=e1078]:
+              - paragraph [ref=e1079]: 30-Day Returns
+              - paragraph [ref=e1080]: Hassle-free returns
+          - generic [ref=e1081]:
+            - img [ref=e1083]
+            - generic [ref=e1085]:
+              - paragraph [ref=e1086]: Secure Checkout
+              - paragraph [ref=e1087]: 256-bit SSL encryption
+          - generic [ref=e1088]:
+            - img [ref=e1090]
+            - generic [ref=e1093]:
+              - paragraph [ref=e1094]: Ethically Made
+              - paragraph [ref=e1095]: Responsible production
+        - generic [ref=e1096]:
+          - generic [ref=e1097]:
+            - paragraph [ref=e1098]: What They Say
+            - heading "Customer Stories" [level=2] [ref=e1099]
+          - generic [ref=e1100]:
+            - generic [ref=e1101]:
+              - generic [ref=e1102]:
+                - img [ref=e1103]
+                - img [ref=e1105]
+                - img [ref=e1107]
+                - img [ref=e1109]
+                - img [ref=e1111]
+              - paragraph [ref=e1113]: “PopCulture completely changed how I think about my wardrobe. Everything is considered — the quality, the fit, the details. Nothing comes close.”
+              - generic [ref=e1114]:
+                - paragraph [ref=e1115]: Aria K.
+                - paragraph [ref=e1116]: London
+            - generic [ref=e1117]:
+              - generic [ref=e1118]:
+                - img [ref=e1119]
+                - img [ref=e1121]
+                - img [ref=e1123]
+                - img [ref=e1125]
+                - img [ref=e1127]
+              - paragraph [ref=e1129]: “I've been shopping here for two years and the quality never wavers. My Wool Blazer is still perfect after 18 months of heavy use.”
+              - generic [ref=e1130]:
+                - paragraph [ref=e1131]: Jordan M.
+                - paragraph [ref=e1132]: New York
+            - generic [ref=e1133]:
+              - generic [ref=e1134]:
+                - img [ref=e1135]
+                - img [ref=e1137]
+                - img [ref=e1139]
+                - img [ref=e1141]
+                - img [ref=e1143]
+              - paragraph [ref=e1145]: “The Silk Slip Dress was the best purchase I've made this year. Three sizes tried, one perfect fit. Their size guide is genuinely accurate.”
+              - generic [ref=e1146]:
+                - paragraph [ref=e1147]: Sasha T.
+                - paragraph [ref=e1148]: Sydney
+        - generic [ref=e1149]:
+          - paragraph [ref=e1150]: Exclusive Access
+          - heading "Join the Inner Circle" [level=2] [ref=e1151]
+          - paragraph [ref=e1152]: Get first access to new drops, members-only discounts, and curated style notes from our team.
+          - generic [ref=e1153]:
+            - textbox "Enter your email address" [ref=e1154]
+            - button "SUBSCRIBE" [ref=e1155]
+          - paragraph [ref=e1156]: No spam, ever. Unsubscribe at any time.
+        - generic [ref=e1157]:
+          - generic [ref=e1158]:
+            - paragraph [ref=e1159]: Follow @popculture
+            - heading "Worn in the Wild" [level=2] [ref=e1160]
+          - generic [ref=e1161]:
+            - generic [ref=e1162] [cursor=pointer]:
+              - img "Instagram 1" [ref=e1163]
+              - img [ref=e1165]
+            - generic [ref=e1168] [cursor=pointer]:
+              - img "Instagram 2" [ref=e1169]
+              - img [ref=e1171]
+            - generic [ref=e1174] [cursor=pointer]:
+              - img "Instagram 3" [ref=e1175]
+              - img [ref=e1177]
+            - generic [ref=e1180] [cursor=pointer]:
+              - img "Instagram 4" [ref=e1181]
+              - img [ref=e1183]
+            - generic [ref=e1186] [cursor=pointer]:
+              - img "Instagram 5" [ref=e1187]
+              - img [ref=e1189]
+            - generic [ref=e1192] [cursor=pointer]:
+              - img "Instagram 6" [ref=e1193]
+              - img [ref=e1195]
+    - contentinfo [ref=e1198]:
+      - generic [ref=e1199]:
+        - generic [ref=e1200]:
+          - generic [ref=e1201]: POPCULTURE
+          - paragraph [ref=e1202]: Premium fashion rooted in culture. Designed for the bold, worn by the confident.
+          - generic [ref=e1203]:
+            - button [ref=e1204]:
+              - img [ref=e1205]
+            - button [ref=e1208]:
+              - img [ref=e1209]
+            - button [ref=e1211]:
+              - img [ref=e1212]
+            - button [ref=e1214]:
+              - img [ref=e1215]
+        - generic [ref=e1218]:
+          - heading "Shop" [level=4] [ref=e1219]
+          - generic [ref=e1220]:
+            - button "New Arrivals" [ref=e1221]
+            - button "Women" [ref=e1222]
+            - button "Men" [ref=e1223]
+            - button "Footwear" [ref=e1224]
+            - button "Accessories" [ref=e1225]
+            - button "Sale" [ref=e1226]
+        - generic [ref=e1227]:
+          - heading "Help" [level=4] [ref=e1228]
+          - generic [ref=e1229]:
+            - button "FAQs" [ref=e1230]
+            - button "Contact Us" [ref=e1231]
+            - button "Shipping" [ref=e1232]
+            - button "Returns" [ref=e1233]
+            - button "Size Guide" [ref=e1234]
+        - generic [ref=e1235]:
+          - heading "Stay in the Loop" [level=4] [ref=e1236]
+          - paragraph [ref=e1237]: Get early access to drops, exclusive offers, and style inspiration.
+          - generic [ref=e1238]:
+            - textbox "Your email" [ref=e1239]
+            - button "JOIN" [ref=e1240]
+      - generic [ref=e1241]:
+        - paragraph [ref=e1242]: © 2024 PopCulture. All rights reserved.
+        - generic [ref=e1243]:
+          - button "Privacy Policy" [ref=e1244]
+          - button "Terms of Service" [ref=e1245]
+          - button "Cookie Settings" [ref=e1246]
+  - generic [ref=e802]: Tops

@@ -1,0 +1,52 @@
+- main [ref=e39]:
+  - generic [ref=e493]:
+    - generic [ref=e494]:
+      - img "Fashion" [ref=e495]
+      - generic [ref=e496]:
+        - generic [ref=e497]: New Member Benefits
+        - generic [ref=e498]:
+          - generic [ref=e499]:
+            - img [ref=e500]
+            - text: 15% off your first order
+          - generic [ref=e503]:
+            - img [ref=e504]
+            - text: Early access to new drops
+          - generic [ref=e507]:
+            - img [ref=e508]
+            - text: Free express shipping over $150
+          - generic [ref=e511]:
+            - img [ref=e512]
+            - text: Members-only promotions
+    - generic [ref=e516]:
+      - generic [ref=e517]:
+        - heading "Create account" [level=1] [ref=e518]
+        - paragraph [ref=e519]: Join the PopCulture community today
+      - generic [ref=e520]:
+        - generic [ref=e521]:
+          - generic [ref=e522]:
+            - generic [ref=e523]: FIRST NAME
+            - textbox "Alex" [ref=e524]
+          - generic [ref=e525]:
+            - generic [ref=e526]: LAST NAME
+            - textbox "Chen" [ref=e527]
+        - generic [ref=e528]:
+          - generic [ref=e529]: EMAIL ADDRESS
+          - textbox "you@example.com" [ref=e530]
+        - generic [ref=e531]:
+          - generic [ref=e532]: PASSWORD
+          - generic [ref=e533]:
+            - textbox "Password" [ref=e534]
+            - button [ref=e535]:
+              - img [ref=e536]
+        - generic [ref=e539]:
+          - checkbox "I agree to the Terms of Service and Privacy Policy . I consent to receiving marketing emails (you can unsubscribe anytime)." [ref=e540]
+          - generic [ref=e541]:
+            - text: I agree to the
+            - button "Terms of Service" [ref=e542]
+            - text: and
+            - button "Privacy Policy" [ref=e543]
+            - text: . I consent to receiving marketing emails (you can unsubscribe anytime).
+        - button "CREATE ACCOUNT" [ref=e544]
+      - paragraph [ref=e545]:
+        - text: Already have an account?
+        - button "Sign in" [ref=e546]
