@@ -1,0 +1,49 @@
+- main [ref=e39]:
+  - generic [ref=e440]:
+    - generic [ref=e441]:
+      - img "Fashion" [ref=e442]
+      - generic [ref=e443]:
+        - generic [ref=e444]: POPCULTURE
+        - paragraph [ref=e445]: "\"Style is a way to say who you are without having to speak.\""
+    - generic [ref=e447]:
+      - generic [ref=e448]:
+        - heading "Welcome back" [level=1] [ref=e449]
+        - paragraph [ref=e450]: Sign in to your PopCulture account
+      - generic [ref=e451]:
+        - generic [ref=e452]:
+          - generic [ref=e453]: EMAIL OR USER ID
+          - textbox "you@example.com" [ref=e454]
+        - generic [ref=e455]:
+          - generic [ref=e456]:
+            - generic [ref=e457]: PASSWORD
+            - button "Forgot password?" [ref=e458]
+          - generic [ref=e459]:
+            - textbox "Password" [ref=e460]
+            - button [ref=e461]:
+              - img [ref=e462]
+        - generic [ref=e465]:
+          - generic [ref=e466] [cursor=pointer]:
+            - checkbox "Keep me signed in" [checked] [ref=e467]
+            - text: Keep me signed in
+          - generic [ref=e468]: Role detected after login
+        - button "SIGN IN" [ref=e469]
+      - generic [ref=e470]:
+        - generic [ref=e471]:
+          - paragraph [ref=e472]: Customer demo
+          - paragraph [ref=e473]: customer@popculture.com
+          - paragraph [ref=e474]: customer123
+        - generic [ref=e475]:
+          - paragraph [ref=e476]: Admin demo
+          - paragraph [ref=e477]: admin@popculture.com
+          - paragraph [ref=e478]: admin123
+      - generic [ref=e482]: or continue with
+      - generic [ref=e483]:
+        - button "Google" [ref=e484]:
+          - img [ref=e485]
+          - text: Google
+        - button "Facebook" [ref=e488]:
+          - img [ref=e489]
+          - text: Facebook
+      - paragraph [ref=e491]:
+        - text: No account yet?
+        - button "Create one" [ref=e492]

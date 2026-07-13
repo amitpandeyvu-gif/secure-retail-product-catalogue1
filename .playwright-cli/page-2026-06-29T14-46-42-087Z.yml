@@ -1,0 +1,349 @@
+- generic [ref=e3]:
+  - banner [ref=e4]:
+    - generic [ref=e5]:
+      - generic [ref=e6]:
+        - navigation [ref=e7]:
+          - button "Shop" [ref=e8]
+          - button "New In" [ref=e9]
+          - button "Sale" [ref=e10]
+          - button "About" [ref=e11]
+        - button "POPCULTURE" [ref=e12]
+        - generic [ref=e13]:
+          - button [ref=e14]:
+            - img [ref=e15]
+          - button [ref=e18]:
+            - img [ref=e19]
+          - button "3" [ref=e22]:
+            - img [ref=e23]
+            - generic [ref=e25]: "3"
+          - button "2" [ref=e26]:
+            - img [ref=e27]
+            - generic [ref=e30]: "2"
+      - navigation [ref=e31]:
+        - button "Women" [ref=e32]
+        - button "Men" [ref=e33]
+        - button "Streetwear" [ref=e34]
+        - button "Footwear" [ref=e35]
+        - button "Accessories" [ref=e36]
+        - button "Dresses" [ref=e37]
+        - button "Sale" [ref=e38]
+  - main [ref=e39]:
+    - generic [ref=e40]:
+      - generic [ref=e41]:
+        - img "Hero" [ref=e42]
+        - generic [ref=e45]:
+          - paragraph [ref=e46]: New Season — SS25
+          - heading "Culture Defines Style." [level=1] [ref=e47]:
+            - text: Culture
+            - text: Defines
+            - text: Style.
+          - paragraph [ref=e48]: Explore the new season collection — pieces built to last, designed to define.
+          - generic [ref=e49]:
+            - button "SHOP NOW" [ref=e50]
+            - button "VIEW LOOKBOOK" [ref=e51]
+      - generic [ref=e53]:
+        - generic [ref=e54]: FREE SHIPPING ON ORDERS OVER $150
+        - generic [ref=e55]: ·
+        - generic [ref=e56]: NEW ARRIVALS EVERY FRIDAY
+        - generic [ref=e57]: ·
+        - generic [ref=e58]: 30-DAY RETURNS
+        - generic [ref=e59]: ·
+        - generic [ref=e60]: SHOP THE SUMMER SALE — UP TO 40% OFF
+        - generic [ref=e61]: ·
+        - generic [ref=e62]: FREE SHIPPING ON ORDERS OVER $150
+        - generic [ref=e63]: ·
+        - generic [ref=e64]: NEW ARRIVALS EVERY FRIDAY
+        - generic [ref=e65]: ·
+        - generic [ref=e66]: 30-DAY RETURNS
+        - generic [ref=e67]: ·
+        - generic [ref=e68]: SHOP THE SUMMER SALE — UP TO 40% OFF
+        - generic [ref=e69]: ·
+        - generic [ref=e70]: FREE SHIPPING ON ORDERS OVER $150
+        - generic [ref=e71]: ·
+        - generic [ref=e72]: NEW ARRIVALS EVERY FRIDAY
+        - generic [ref=e73]: ·
+        - generic [ref=e74]: 30-DAY RETURNS
+        - generic [ref=e75]: ·
+        - generic [ref=e76]: SHOP THE SUMMER SALE — UP TO 40% OFF
+        - generic [ref=e77]: ·
+      - generic [ref=e78]:
+        - generic [ref=e79]:
+          - heading "Shop by Category" [level=2] [ref=e80]
+          - button "VIEW ALL" [ref=e81]:
+            - text: VIEW ALL
+            - img [ref=e82]
+        - generic [ref=e84]:
+          - button "Women Women" [ref=e85]:
+            - img "Women" [ref=e86]
+            - generic [ref=e89]: Women
+          - button "Men Men" [ref=e90]:
+            - img "Men" [ref=e91]
+            - generic [ref=e94]: Men
+          - button "Streetwear Streetwear" [ref=e95]:
+            - img "Streetwear" [ref=e96]
+            - generic [ref=e99]: Streetwear
+          - button "Footwear Footwear" [ref=e100]:
+            - img "Footwear" [ref=e101]
+            - generic [ref=e104]: Footwear
+          - button "Accessories Accessories" [ref=e105]:
+            - img "Accessories" [ref=e106]
+            - generic [ref=e109]: Accessories
+          - button "Sale Sale" [ref=e110]:
+            - img "Sale" [ref=e111]
+            - generic [ref=e114]: Sale
+      - generic [ref=e116]:
+        - generic [ref=e117]:
+          - paragraph [ref=e118]: Featured Collection
+          - heading "The Essential Edit SS25" [level=2] [ref=e119]:
+            - text: The Essential
+            - text: Edit SS25
+          - paragraph [ref=e120]: Curated pieces that form the cornerstone of a considered wardrobe. Quiet luxury, enduring quality — each item selected to work harder and last longer.
+          - button "EXPLORE EDIT" [ref=e121]:
+            - text: EXPLORE EDIT
+            - img [ref=e122]
+        - generic [ref=e124]:
+          - img "Collection 1" [ref=e125]
+          - img "Collection 2" [ref=e126]
+      - generic [ref=e127]:
+        - generic [ref=e128]:
+          - generic [ref=e129]:
+            - paragraph [ref=e130]: Just Landed
+            - heading "New Arrivals" [level=2] [ref=e131]
+          - button "SEE ALL" [ref=e132]:
+            - text: SEE ALL
+            - img [ref=e133]
+        - generic [ref=e135]:
+          - generic [ref=e136] [cursor=pointer]:
+            - generic [ref=e137]:
+              - img "Amit Signature Wool Blazer" [ref=e138]
+              - generic [ref=e139]: NEW
+              - button [ref=e140]:
+                - img [ref=e141]
+              - button "QUICK ADD" [ref=e143]
+            - generic [ref=e144]:
+              - paragraph [ref=e145]: Amit Pandey Studio
+              - paragraph [ref=e146]: Amit Signature Wool Blazer
+              - generic [ref=e148]: $349
+          - generic [ref=e149] [cursor=pointer]:
+            - generic [ref=e150]:
+              - img "Cloud Runner Sneaker" [ref=e151]
+              - generic [ref=e152]: NEW
+              - button [ref=e153]:
+                - img [ref=e154]
+              - button "QUICK ADD" [ref=e156]
+            - generic [ref=e157]:
+              - paragraph [ref=e158]: Amit Pandey Studio
+              - paragraph [ref=e159]: Cloud Runner Sneaker
+              - generic [ref=e161]: $229
+          - generic [ref=e162] [cursor=pointer]:
+            - generic [ref=e163]:
+              - img "Merino Rib Mock-Neck" [ref=e164]
+              - generic [ref=e165]: NEW
+              - button [ref=e166]:
+                - img [ref=e167]
+              - button "QUICK ADD" [ref=e169]
+            - generic [ref=e170]:
+              - paragraph [ref=e171]: Amit Pandey Studio
+              - paragraph [ref=e172]: Merino Rib Mock-Neck
+              - generic [ref=e174]: $159
+          - generic [ref=e175] [cursor=pointer]:
+            - generic [ref=e176]:
+              - img "Red Tulle City Gown" [ref=e177]
+              - generic [ref=e178]: NEW
+              - button [ref=e179]:
+                - img [ref=e180]
+              - button "QUICK ADD" [ref=e182]
+            - generic [ref=e183]:
+              - paragraph [ref=e184]: Amit Pandey Studio
+              - paragraph [ref=e185]: Red Tulle City Gown
+              - generic [ref=e187]: $389
+      - generic [ref=e188]:
+        - paragraph [ref=e189]: Limited Time
+        - heading "Up to 40% Off" [level=2] [ref=e190]
+        - paragraph [ref=e191]: Shop the season-end sale — selected styles reduced while stocks last.
+        - button "SHOP THE SALE" [ref=e192]
+      - generic [ref=e193]:
+        - generic [ref=e195]:
+          - paragraph [ref=e196]: Most Wanted
+          - heading "Trending Now" [level=2] [ref=e197]
+        - generic [ref=e198]:
+          - generic [ref=e199] [cursor=pointer]:
+            - generic [ref=e200]:
+              - img "Organic Heavyweight Tee" [ref=e201]
+              - button [ref=e202]:
+                - img [ref=e203]
+              - button "QUICK ADD" [ref=e205]
+            - generic [ref=e206]:
+              - paragraph [ref=e207]: Amit Pandey Studio
+              - paragraph [ref=e208]: Organic Heavyweight Tee
+              - generic [ref=e210]: $89
+          - generic [ref=e211] [cursor=pointer]:
+            - generic [ref=e212]:
+              - img "Utility Wide-Leg Cargo" [ref=e213]
+              - generic [ref=e214]: SALE
+              - button [ref=e215]:
+                - img [ref=e216]
+              - button "QUICK ADD" [ref=e218]
+            - generic [ref=e219]:
+              - paragraph [ref=e220]: Amit Pandey Studio
+              - paragraph [ref=e221]: Utility Wide-Leg Cargo
+              - generic [ref=e222]:
+                - generic [ref=e223]: $189
+                - generic [ref=e224]: $249
+          - generic [ref=e225] [cursor=pointer]:
+            - generic [ref=e226]:
+              - img "Cloud Runner Sneaker" [ref=e227]
+              - generic [ref=e228]: NEW
+              - button [ref=e229]:
+                - img [ref=e230]
+              - button "QUICK ADD" [ref=e232]
+            - generic [ref=e233]:
+              - paragraph [ref=e234]: Amit Pandey Studio
+              - paragraph [ref=e235]: Cloud Runner Sneaker
+              - generic [ref=e237]: $229
+          - generic [ref=e238] [cursor=pointer]:
+            - generic [ref=e239]:
+              - img "Sculpted Leather Crossbody" [ref=e240]
+              - generic [ref=e241]: SALE
+              - button [ref=e242]:
+                - img [ref=e243]
+              - button "QUICK ADD" [ref=e245]
+            - generic [ref=e246]:
+              - paragraph [ref=e247]: Amit Pandey Studio
+              - paragraph [ref=e248]: Sculpted Leather Crossbody
+              - generic [ref=e249]:
+                - generic [ref=e250]: $299
+                - generic [ref=e251]: $399
+      - generic [ref=e253]:
+        - generic [ref=e254]:
+          - img [ref=e256]
+          - generic [ref=e261]:
+            - paragraph [ref=e262]: Free Shipping
+            - paragraph [ref=e263]: On orders over $150
+        - generic [ref=e264]:
+          - img [ref=e266]
+          - generic [ref=e271]:
+            - paragraph [ref=e272]: 30-Day Returns
+            - paragraph [ref=e273]: Hassle-free returns
+        - generic [ref=e274]:
+          - img [ref=e276]
+          - generic [ref=e278]:
+            - paragraph [ref=e279]: Secure Checkout
+            - paragraph [ref=e280]: 256-bit SSL encryption
+        - generic [ref=e281]:
+          - img [ref=e283]
+          - generic [ref=e286]:
+            - paragraph [ref=e287]: Ethically Made
+            - paragraph [ref=e288]: Responsible production
+      - generic [ref=e289]:
+        - generic [ref=e290]:
+          - paragraph [ref=e291]: What They Say
+          - heading "Customer Stories" [level=2] [ref=e292]
+        - generic [ref=e293]:
+          - generic [ref=e294]:
+            - generic [ref=e295]:
+              - img [ref=e296]
+              - img [ref=e298]
+              - img [ref=e300]
+              - img [ref=e302]
+              - img [ref=e304]
+            - paragraph [ref=e306]: “PopCulture completely changed how I think about my wardrobe. Everything is considered — the quality, the fit, the details. Nothing comes close.”
+            - generic [ref=e307]:
+              - paragraph [ref=e308]: Aria K.
+              - paragraph [ref=e309]: London
+          - generic [ref=e310]:
+            - generic [ref=e311]:
+              - img [ref=e312]
+              - img [ref=e314]
+              - img [ref=e316]
+              - img [ref=e318]
+              - img [ref=e320]
+            - paragraph [ref=e322]: “I've been shopping here for two years and the quality never wavers. My Wool Blazer is still perfect after 18 months of heavy use.”
+            - generic [ref=e323]:
+              - paragraph [ref=e324]: Jordan M.
+              - paragraph [ref=e325]: Sydney
+          - generic [ref=e326]:
+            - generic [ref=e327]:
+              - img [ref=e328]
+              - img [ref=e330]
+              - img [ref=e332]
+              - img [ref=e334]
+              - img [ref=e336]
+            - paragraph [ref=e338]: “The Black Bias Silk Slip Dress was the best purchase I've made this year. Three sizes tried, one perfect fit. Their size guide is genuinely accurate.”
+            - generic [ref=e339]:
+              - paragraph [ref=e340]: Sasha T.
+              - paragraph [ref=e341]: Sydney
+      - generic [ref=e342]:
+        - paragraph [ref=e343]: Exclusive Access
+        - heading "Join the Inner Circle" [level=2] [ref=e344]
+        - paragraph [ref=e345]: Get first access to new drops, members-only discounts, and curated style notes from our team.
+        - generic [ref=e346]:
+          - textbox "Enter your email address" [ref=e347]
+          - button "SUBSCRIBE" [ref=e348]
+        - paragraph [ref=e349]: No spam, ever. Unsubscribe at any time.
+      - generic [ref=e350]:
+        - generic [ref=e351]:
+          - paragraph [ref=e352]: Follow @popculture
+          - heading "Worn in the Wild" [level=2] [ref=e353]
+        - generic [ref=e354]:
+          - generic [ref=e355] [cursor=pointer]:
+            - img "Instagram 1" [ref=e356]
+            - img [ref=e358]
+          - generic [ref=e361] [cursor=pointer]:
+            - img "Instagram 2" [ref=e362]
+            - img [ref=e364]
+          - generic [ref=e367] [cursor=pointer]:
+            - img "Instagram 3" [ref=e368]
+            - img [ref=e370]
+          - generic [ref=e373] [cursor=pointer]:
+            - img "Instagram 4" [ref=e374]
+            - img [ref=e376]
+          - generic [ref=e379] [cursor=pointer]:
+            - img "Instagram 5" [ref=e380]
+            - img [ref=e382]
+          - generic [ref=e385] [cursor=pointer]:
+            - img "Instagram 6" [ref=e386]
+            - img [ref=e388]
+  - contentinfo [ref=e391]:
+    - generic [ref=e392]:
+      - generic [ref=e393]:
+        - generic [ref=e394]: POPCULTURE
+        - paragraph [ref=e395]: Premium fashion rooted in culture. Designed for the bold, worn by the confident.
+        - generic [ref=e396]:
+          - button [ref=e397]:
+            - img [ref=e398]
+          - button [ref=e401]:
+            - img [ref=e402]
+          - button [ref=e404]:
+            - img [ref=e405]
+          - button [ref=e407]:
+            - img [ref=e408]
+      - generic [ref=e411]:
+        - heading "Shop" [level=4] [ref=e412]
+        - generic [ref=e413]:
+          - button "New Arrivals" [ref=e414]
+          - button "Women" [ref=e415]
+          - button "Men" [ref=e416]
+          - button "Footwear" [ref=e417]
+          - button "Accessories" [ref=e418]
+          - button "Sale" [ref=e419]
+      - generic [ref=e420]:
+        - heading "Help" [level=4] [ref=e421]
+        - generic [ref=e422]:
+          - button "FAQs" [ref=e423]
+          - button "Contact Us" [ref=e424]
+          - button "Shipping" [ref=e425]
+          - button "Returns" [ref=e426]
+          - button "Size Guide" [ref=e427]
+      - generic [ref=e428]:
+        - heading "Stay in the Loop" [level=4] [ref=e429]
+        - paragraph [ref=e430]: Get early access to drops, exclusive offers, and style inspiration.
+        - generic [ref=e431]:
+          - textbox "Your email" [ref=e432]
+          - button "JOIN" [ref=e433]
+    - generic [ref=e434]:
+      - paragraph [ref=e435]: © 2026 Amit Pandey Studio. All rights reserved.
+      - generic [ref=e436]:
+        - button "Privacy Policy" [ref=e437]
+        - button "Terms of Service" [ref=e438]
+        - button "Cookie Settings" [ref=e439]
