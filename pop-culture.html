@@ -1,0 +1,984 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Pop Culture — Modern Fandom Streetwear</title>
+<meta name="description" content="Pop Culture is a modern clothing brand for fandom-inspired streetwear: hoodies, tees, jackets and more, drop by drop." />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='2' fill='%2314141c'/%3E%3Ctext x='16' y='22' font-size='18' font-family='Arial' font-weight='900' fill='%23e8402c' text-anchor='middle'%3EP%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Space+Grotesk:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+/* ============ TOKENS ============ */
+:root{
+  --ink:#14141c;
+  --ink-soft:#23222f;
+  --paper:#eeeadf;
+  --paper-dim:#e3ddcc;
+  --red:#e8402c;
+  --violet:#7c5cff;
+  --lime:#c6ff3d;
+  --gold:#d9a441;
+  --gray:#6b6a76;
+  --line:rgba(20,20,28,0.16);
+  --font-display:'Anton',sans-serif;
+  --font-body:'Space Grotesk',sans-serif;
+  --font-mono:'Space Mono',monospace;
+  --container:1180px;
+}
+*{box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{
+  margin:0;
+  font-family:var(--font-body);
+  background:var(--paper);
+  color:var(--ink);
+  line-height:1.55;
+  -webkit-font-smoothing:antialiased;
+}
+img{max-width:100%;display:block;}
+a{color:inherit;}
+button{font-family:inherit;}
+h1,h2,h3,h4{font-family:var(--font-display);font-weight:400;letter-spacing:0.01em;text-transform:uppercase;margin:0;}
+.wrap{max-width:var(--container);margin:0 auto;padding:0 24px;}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0;}
+.skip-link{position:absolute;left:-999px;top:0;background:var(--ink);color:var(--paper);padding:10px 16px;z-index:200;font-family:var(--font-mono);font-size:13px;}
+.skip-link:focus{left:16px;top:16px;}
+:focus-visible{outline:3px solid var(--red);outline-offset:2px;}
+@media (prefers-reduced-motion: reduce){
+  *{animation-duration:0.01ms !important;animation-iteration-count:1 !important;transition-duration:0.01ms !important;scroll-behavior:auto !important;}
+}
+
+/* ============ NAV / TICKET STRIP ============ */
+header.site-nav{
+  position:sticky;top:0;z-index:100;
+  background:var(--paper);
+  border-bottom:2px dashed var(--ink);
+}
+.nav-inner{
+  max-width:var(--container);margin:0 auto;padding:14px 24px;
+  display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;
+}
+.brand{display:flex;align-items:baseline;gap:10px;text-decoration:none;}
+.brand .mark{
+  background:var(--ink);color:var(--red);font-family:var(--font-display);
+  font-size:22px;padding:4px 8px;line-height:1;
+}
+.brand .word{font-family:var(--font-display);font-size:24px;letter-spacing:0.02em;}
+.brand .tag{font-family:var(--font-mono);font-size:11px;color:var(--gray);letter-spacing:0.08em;}
+nav.primary{display:flex;align-items:center;gap:2px;flex-wrap:wrap;}
+nav.primary a{
+  font-family:var(--font-mono);font-size:13px;text-transform:uppercase;letter-spacing:0.05em;
+  padding:10px 14px;text-decoration:none;border-right:1px dotted var(--line);position:relative;
+}
+nav.primary a:last-child{border-right:none;}
+nav.primary a.active{color:var(--red);}
+nav.primary a.active::after{content:"";position:absolute;left:14px;right:14px;bottom:4px;height:2px;background:var(--red);}
+.nav-actions{display:flex;align-items:center;gap:10px;}
+.cart-btn{
+  font-family:var(--font-mono);font-size:13px;background:var(--ink);color:var(--paper);
+  border:none;padding:10px 16px;cursor:pointer;display:flex;align-items:center;gap:8px;
+}
+.cart-btn:hover{background:var(--red);}
+.cart-count{background:var(--lime);color:var(--ink);border-radius:999px;padding:1px 7px;font-weight:700;}
+.admin-link{font-family:var(--font-mono);font-size:12px;color:var(--gray);text-decoration:none;border-bottom:1px dotted var(--gray);}
+
+/* ============ VIEWS ============ */
+.view{display:none;}
+.view.active{display:block;}
+
+/* ============ HOME / HERO ============ */
+.hero{
+  padding:56px 0 40px;border-bottom:2px dashed var(--ink);
+}
+.hero-grid{display:grid;grid-template-columns:1.1fr 0.9fr;gap:48px;align-items:center;}
+.eyebrow{font-family:var(--font-mono);font-size:12px;letter-spacing:0.12em;text-transform:uppercase;color:var(--red);margin-bottom:14px;display:inline-block;background:var(--ink);color:var(--lime);padding:4px 10px;}
+.hero h1{font-size:clamp(42px,7vw,84px);line-height:0.95;margin-bottom:18px;}
+.hero h1 span{color:var(--red);}
+.hero p.lede{font-size:17px;max-width:46ch;color:var(--ink-soft);margin-bottom:26px;}
+.cta-row{display:flex;gap:14px;flex-wrap:wrap;}
+.btn{
+  font-family:var(--font-mono);font-size:13px;text-transform:uppercase;letter-spacing:0.05em;
+  padding:14px 22px;text-decoration:none;border:2px solid var(--ink);cursor:pointer;background:transparent;
+  display:inline-flex;align-items:center;gap:8px;
+}
+.btn-primary{background:var(--ink);color:var(--paper);}
+.btn-primary:hover{background:var(--red);border-color:var(--red);}
+.btn-ghost:hover{background:var(--ink);color:var(--paper);}
+
+.hero-stack{position:relative;height:340px;}
+.mini-ticket{
+  position:absolute;width:220px;background:var(--paper);border:2px solid var(--ink);padding:14px;
+  box-shadow:6px 6px 0 var(--ink);
+}
+.mini-ticket .swatch{height:110px;margin-bottom:10px;}
+.mini-ticket .name{font-size:13px;font-weight:700;margin-bottom:4px;}
+.mini-ticket .price{font-family:var(--font-mono);font-size:13px;color:var(--red);}
+.mini-ticket.m1{left:0;top:10px;transform:rotate(-6deg);z-index:3;}
+.mini-ticket.m2{left:140px;top:70px;transform:rotate(4deg);z-index:2;}
+.mini-ticket.m3{left:80px;top:180px;transform:rotate(-2deg);z-index:1;}
+
+.collections{padding:44px 0;border-bottom:2px dashed var(--ink);}
+.collections h2{font-size:22px;margin-bottom:18px;}
+.chip-row{display:flex;gap:10px;flex-wrap:wrap;}
+.patch{
+  font-family:var(--font-mono);font-size:12.5px;text-transform:uppercase;letter-spacing:0.04em;
+  padding:10px 16px;border:2px solid var(--ink);background:var(--paper);cursor:pointer;text-decoration:none;
+}
+.patch:hover{background:var(--ink);color:var(--paper);}
+
+/* ============ SHOP ============ */
+.shop-header{padding:40px 0 16px;}
+.shop-header h2{font-size:34px;margin-bottom:8px;}
+.shop-header p{color:var(--gray);max-width:60ch;}
+.filter-bar{
+  position:sticky;top:64px;z-index:50;background:var(--paper);
+  padding:14px 0;border-bottom:1px solid var(--line);
+  display:flex;gap:12px;flex-wrap:wrap;align-items:center;justify-content:space-between;
+}
+.filter-chips{display:flex;gap:8px;flex-wrap:wrap;}
+.filter-chips button{
+  font-family:var(--font-mono);font-size:12px;text-transform:uppercase;padding:8px 12px;
+  border:1.5px solid var(--ink);background:transparent;cursor:pointer;
+}
+.filter-chips button.active{background:var(--ink);color:var(--paper);}
+.search-sort{display:flex;gap:8px;flex-wrap:wrap;}
+.search-sort input, .search-sort select{
+  font-family:var(--font-body);font-size:13px;padding:9px 12px;border:1.5px solid var(--ink);background:var(--paper);
+}
+.product-grid{
+  display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:22px;padding:28px 0 60px;
+}
+.ticket{
+  border:2px solid var(--ink);background:var(--paper);position:relative;display:flex;flex-direction:column;
+}
+.ticket .img{
+  height:180px;position:relative;overflow:hidden;
+}
+.ticket .img .drop-tag{
+  position:absolute;top:8px;left:8px;background:var(--ink);color:var(--paper);font-family:var(--font-mono);
+  font-size:10px;padding:3px 7px;letter-spacing:0.05em;
+}
+.ticket .img .cname{
+  position:absolute;bottom:8px;left:8px;right:8px;color:#fff;font-family:var(--font-mono);
+  font-size:10px;text-transform:uppercase;letter-spacing:0.08em;opacity:0.9;
+}
+.ticket .body{padding:14px 14px 0;flex:1;}
+.ticket .body h3{font-family:var(--font-body);font-weight:700;text-transform:none;font-size:15px;letter-spacing:0;margin-bottom:6px;}
+.ticket .body .desc{font-size:12.5px;color:var(--gray);margin-bottom:10px;}
+.perf{
+  border-top:2px dashed var(--ink);position:relative;margin-top:6px;
+}
+.perf::before,.perf::after{
+  content:"";position:absolute;top:-8px;width:16px;height:16px;border-radius:50%;background:var(--paper);border:2px solid var(--ink);
+}
+.perf::before{left:-10px;}
+.perf::after{right:-10px;}
+.ticket .stub{padding:14px;display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap;}
+.price-block{font-family:var(--font-mono);}
+.price-block .price{font-size:18px;font-weight:700;}
+.price-block .sku{font-size:10px;color:var(--gray);}
+.stub-actions{display:flex;gap:6px;align-items:center;}
+.stub-actions select{font-family:var(--font-mono);font-size:11px;padding:6px;border:1.5px solid var(--ink);background:var(--paper);}
+.add-btn{
+  font-family:var(--font-mono);font-size:11px;text-transform:uppercase;background:var(--ink);color:var(--paper);
+  border:none;padding:8px 10px;cursor:pointer;
+}
+.add-btn:hover{background:var(--red);}
+.add-btn:disabled{background:var(--gray);cursor:not-allowed;}
+.stock-flag{font-family:var(--font-mono);font-size:10px;color:var(--red);padding:0 14px 12px;}
+.no-results{padding:60px 0;text-align:center;color:var(--gray);font-family:var(--font-mono);}
+
+/* category gradients */
+.cat-scifi{background:linear-gradient(135deg,var(--violet) 0%,var(--ink) 100%);}
+.cat-cape{background:linear-gradient(135deg,var(--red) 0%,var(--ink) 100%);}
+.cat-bit{background:linear-gradient(135deg,var(--lime) 0%,var(--ink) 100%);}
+.cat-arcane{background:linear-gradient(135deg,var(--gold) 0%,var(--ink) 100%);}
+.cat-anime{background:linear-gradient(135deg,var(--red) 0%,var(--violet) 100%);}
+
+/* ============ ABOUT ============ */
+.about-section{padding:44px 0 60px;}
+.about-section h2{font-size:30px;margin-bottom:14px;}
+.about-block{margin-bottom:36px;max-width:70ch;}
+.about-block p{color:var(--ink-soft);}
+.team-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(170px,1fr));gap:16px;}
+.team-badge{border:2px solid var(--ink);padding:16px;text-align:center;background:var(--paper);}
+.team-badge .avatar{
+  width:52px;height:52px;border-radius:50%;background:var(--ink);color:var(--lime);
+  display:flex;align-items:center;justify-content:center;margin:0 auto 10px;font-family:var(--font-display);font-size:20px;
+}
+.team-badge h4{font-family:var(--font-body);font-weight:700;text-transform:none;letter-spacing:0;font-size:14px;}
+.team-badge p{font-family:var(--font-mono);font-size:11px;color:var(--red);margin-top:4px;}
+
+/* ============ CONTACT ============ */
+.contact-section{padding:44px 0 60px;}
+.contact-grid{display:grid;grid-template-columns:0.9fr 1.1fr;gap:28px;align-items:start;}
+.info-card, .form-card{border:2px solid var(--ink);padding:26px;background:var(--paper);}
+.info-card h3, .form-card h3{font-size:20px;margin-bottom:12px;}
+.info-list{list-style:none;padding:0;margin:16px 0 0;font-family:var(--font-mono);font-size:13px;display:grid;gap:10px;}
+.form-row{display:flex;flex-direction:column;gap:6px;margin-bottom:14px;}
+.form-row label{font-family:var(--font-mono);font-size:12px;text-transform:uppercase;letter-spacing:0.04em;}
+.form-row input, .form-row textarea{
+  padding:11px 12px;border:1.5px solid var(--ink);background:#fff;font-family:var(--font-body);font-size:14px;
+}
+.form-row textarea{resize:vertical;min-height:110px;}
+.success-banner{
+  background:var(--ink);color:var(--lime);font-family:var(--font-mono);font-size:13px;padding:12px 14px;margin-bottom:14px;display:none;
+}
+.success-banner.show{display:block;}
+
+/* ============ ADMIN ============ */
+.admin-section{padding:44px 0 70px;}
+.admin-login{max-width:420px;border:2px solid var(--ink);padding:28px;background:var(--paper);}
+.admin-login p.note{font-family:var(--font-mono);font-size:11.5px;color:var(--gray);margin-top:12px;line-height:1.6;}
+.admin-error{color:var(--red);font-family:var(--font-mono);font-size:12px;margin-top:8px;display:none;}
+.admin-error.show{display:block;}
+.stat-row{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-bottom:30px;}
+.stat-card{border:2px solid var(--ink);padding:18px;background:var(--paper);}
+.stat-card .num{font-family:var(--font-mono);font-size:26px;font-weight:700;}
+.stat-card .label{font-family:var(--font-mono);font-size:11px;color:var(--gray);text-transform:uppercase;}
+.admin-table-wrap{overflow-x:auto;border:2px solid var(--ink);}
+table.admin-table{width:100%;border-collapse:collapse;font-size:13px;min-width:760px;}
+table.admin-table th{
+  text-align:left;font-family:var(--font-mono);font-size:11px;text-transform:uppercase;letter-spacing:0.04em;
+  background:var(--ink);color:var(--paper);padding:10px 12px;
+}
+table.admin-table td{padding:10px 12px;border-bottom:1px solid var(--line);vertical-align:middle;}
+table.admin-table input[type="number"], table.admin-table input[type="text"]{
+  width:90px;padding:7px 8px;border:1.5px solid var(--ink);font-family:var(--font-mono);font-size:12px;background:#fff;
+}
+table.admin-table input[type="text"].wide{width:170px;}
+.status-pill{font-family:var(--font-mono);font-size:11px;padding:5px 9px;border:1.5px solid var(--ink);background:transparent;cursor:pointer;}
+.status-pill.hidden-state{background:var(--gray);color:#fff;border-color:var(--gray);}
+.del-btn{font-family:var(--font-mono);font-size:11px;background:transparent;border:1.5px solid var(--red);color:var(--red);padding:5px 9px;cursor:pointer;}
+.del-btn:hover{background:var(--red);color:#fff;}
+.add-product-card{border:2px dashed var(--ink);padding:20px;margin-top:24px;}
+.add-product-card h3{font-size:16px;margin-bottom:14px;}
+.add-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:12px;align-items:end;}
+.add-grid .form-row{margin-bottom:0;}
+.admin-logout{font-family:var(--font-mono);font-size:12px;background:transparent;border:1.5px solid var(--ink);padding:8px 12px;cursor:pointer;}
+
+/* ============ CART DRAWER ============ */
+.overlay{position:fixed;inset:0;background:rgba(20,20,28,0.5);opacity:0;pointer-events:none;transition:opacity 0.2s;z-index:150;}
+.overlay.show{opacity:1;pointer-events:auto;}
+.cart-drawer{
+  position:fixed;top:0;right:-420px;width:400px;max-width:92vw;height:100%;background:var(--paper);
+  border-left:2px solid var(--ink);z-index:160;transition:right 0.25s ease;display:flex;flex-direction:column;
+}
+.cart-drawer.open{right:0;}
+.cart-drawer-header{padding:18px 20px;border-bottom:2px dashed var(--ink);display:flex;justify-content:space-between;align-items:center;}
+.cart-drawer-header h3{font-size:20px;}
+.close-cart{background:none;border:none;font-size:22px;cursor:pointer;font-family:var(--font-display);}
+.cart-items{flex:1;overflow-y:auto;padding:14px 20px;}
+.cart-line{display:flex;gap:12px;padding:12px 0;border-bottom:1px solid var(--line);}
+.cart-line .swatch-sm{width:56px;height:56px;flex-shrink:0;}
+.cart-line .info{flex:1;}
+.cart-line .info .name{font-weight:700;font-size:13.5px;}
+.cart-line .info .meta{font-family:var(--font-mono);font-size:11px;color:var(--gray);margin:2px 0 8px;}
+.qty-stepper{display:flex;align-items:center;gap:8px;}
+.qty-stepper button{width:24px;height:24px;border:1.5px solid var(--ink);background:transparent;cursor:pointer;font-family:var(--font-mono);}
+.qty-stepper span{font-family:var(--font-mono);font-size:13px;min-width:16px;text-align:center;}
+.remove-line{background:none;border:none;color:var(--red);font-family:var(--font-mono);font-size:11px;cursor:pointer;text-decoration:underline;margin-left:auto;}
+.cart-empty{padding:40px 0;text-align:center;color:var(--gray);font-family:var(--font-mono);font-size:13px;}
+.cart-footer{border-top:2px dashed var(--ink);padding:16px 20px;}
+.subtotal-row{display:flex;justify-content:space-between;font-family:var(--font-mono);font-size:15px;margin-bottom:12px;}
+.checkout-btn{width:100%;justify-content:center;}
+.order-confirm{padding:40px 20px;text-align:center;}
+.order-confirm .num{font-family:var(--font-mono);font-size:22px;color:var(--red);margin:12px 0;}
+
+/* ============ TOAST ============ */
+#toast{
+  position:fixed;bottom:20px;left:50%;transform:translateX(-50%) translateY(20px);
+  background:var(--ink);color:var(--lime);font-family:var(--font-mono);font-size:13px;
+  padding:12px 18px;z-index:200;opacity:0;pointer-events:none;transition:all 0.25s;
+}
+#toast.show{opacity:1;transform:translateX(-50%) translateY(0);}
+
+/* ============ FOOTER ============ */
+footer.site-footer{border-top:2px dashed var(--ink);padding:34px 0;margin-top:0;}
+.footer-grid{display:flex;justify-content:space-between;flex-wrap:wrap;gap:20px;}
+.footer-grid .word{font-family:var(--font-display);font-size:20px;}
+.footer-links{display:flex;gap:16px;flex-wrap:wrap;font-family:var(--font-mono);font-size:12px;}
+.footer-links a{text-decoration:none;border-bottom:1px dotted var(--gray);}
+.fine-print{font-family:var(--font-mono);font-size:11px;color:var(--gray);margin-top:20px;}
+
+/* ============ RESPONSIVE ============ */
+@media (max-width:900px){
+  .hero-grid{grid-template-columns:1fr;}
+  .hero-stack{height:280px;margin-top:20px;}
+  .contact-grid{grid-template-columns:1fr;}
+  .stat-row{grid-template-columns:1fr 1fr;}
+}
+@media (max-width:640px){
+  nav.primary{width:100%;justify-content:flex-start;order:3;border-top:1px dashed var(--line);padding-top:8px;margin-top:8px;}
+  .nav-inner{flex-direction:row;}
+  .hero{padding:36px 0 28px;}
+  .filter-bar{top:auto;position:static;flex-direction:column;align-items:stretch;}
+  .search-sort{flex-direction:column;}
+  .search-sort input, .search-sort select{width:100%;}
+  .cart-drawer{width:100%;max-width:100%;}
+  .stat-row{grid-template-columns:1fr;}
+  .add-grid{grid-template-columns:1fr;}
+  table.admin-table{min-width:640px;}
+}
+</style>
+</head>
+<body>
+<a href="#main" class="skip-link">Skip to content</a>
+
+<header class="site-nav">
+  <div class="nav-inner">
+    <a href="#/home" class="brand">
+      <span class="mark">P</span>
+      <span class="word">POP CULTURE</span>
+      <span class="tag">EST. 2026</span>
+    </a>
+    <nav class="primary" id="primary-nav" aria-label="Primary">
+      <a href="#/home" data-view="home">Home</a>
+      <a href="#/shop" data-view="shop">Shop</a>
+      <a href="#/about" data-view="about">About</a>
+      <a href="#/contact" data-view="contact">Contact</a>
+    </nav>
+    <div class="nav-actions">
+      <a href="#/admin" class="admin-link" data-view="admin">Admin</a>
+      <button class="cart-btn" id="open-cart" aria-haspopup="dialog">
+        Cart <span class="cart-count" id="cart-count">0</span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- HOME -->
+  <section class="view" id="view-home">
+    <div class="hero wrap">
+      <div class="hero-grid">
+        <div>
+          <span class="eyebrow">Drop No. 004 — Out Now</span>
+          <h1>WEAR THE<br><span>STORY.</span></h1>
+          <p class="lede">Modern streetwear built for people who never left the fandom. Hoodies, jackets and tees inspired by sci-fi sagas, caped legends, retro game worlds, arcane academies and anime undergrounds — cut for everyday wear.</p>
+          <div class="cta-row">
+            <a href="#/shop" class="btn btn-primary">Shop the Drop →</a>
+            <a href="#/about" class="btn btn-ghost">Our Story</a>
+          </div>
+        </div>
+        <div class="hero-stack" aria-hidden="true">
+          <div class="mini-ticket m1">
+            <div class="swatch cat-cape"></div>
+            <div class="name">Gotham Nights Bomber</div>
+            <div class="price">$124.00</div>
+          </div>
+          <div class="mini-ticket m2">
+            <div class="swatch cat-scifi"></div>
+            <div class="name">Nova Strike Hoodie</div>
+            <div class="price">$68.00</div>
+          </div>
+          <div class="mini-ticket m3">
+            <div class="swatch cat-anime"></div>
+            <div class="name">Neo Tokyo Windbreaker</div>
+            <div class="price">$95.00</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="collections wrap">
+      <h2>Shop by Collection</h2>
+      <div class="chip-row" id="home-collections"></div>
+    </div>
+  </section>
+
+  <!-- SHOP -->
+  <section class="view" id="view-shop">
+    <div class="wrap">
+      <div class="shop-header">
+        <h2>The Full Catalogue</h2>
+        <p>Every piece is a numbered ticket — add your size, add to cart, and it's yours. Stock updates live from the admin dashboard.</p>
+      </div>
+      <div class="filter-bar">
+        <div class="filter-chips" id="filter-chips"></div>
+        <div class="search-sort">
+          <input type="search" id="search-input" placeholder="Search products…" aria-label="Search products">
+          <select id="sort-select" aria-label="Sort products">
+            <option value="default">Sort: Featured</option>
+            <option value="price-asc">Price: Low to High</option>
+            <option value="price-desc">Price: High to Low</option>
+            <option value="name-asc">Name: A–Z</option>
+          </select>
+        </div>
+      </div>
+      <div class="product-grid" id="product-grid"></div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="view" id="view-about">
+    <div class="wrap about-section">
+      <h2>About Pop Culture</h2>
+      <div class="about-block">
+        <h3 style="font-size:16px;margin-bottom:8px;">Project Description</h3>
+        <p>Pop Culture is a modern clothing storefront built for fans who want their favourite genres — sci-fi, superheroes, retro gaming, fantasy and anime — woven into everyday streetwear, not just novelty prints. The catalogue, shopping cart and admin dashboard on this site were built as part of an IT Capstone project, upgraded into a fully responsive, single-page experience.</p>
+      </div>
+      <div class="about-block">
+        <h3 style="font-size:16px;margin-bottom:8px;">Problem Statement</h3>
+        <p>Fans of pop culture merchandise often bounce between cluttered, hard-to-navigate stores to find clothing that feels current rather than costume-y. Pop Culture solves this with one clean, secure, mobile-friendly catalogue — plus tools for a small team to manage stock and pricing without touching code.</p>
+      </div>
+      <div class="about-block">
+        <h3 style="font-size:16px;margin-bottom:14px;">Team — Group 2, IT Capstone A</h3>
+        <div class="team-grid">
+          <div class="team-badge"><div class="avatar">A</div><h4>Amit</h4><p>Team Leader</p></div>
+          <div class="team-badge"><div class="avatar">S</div><h4>Sujal</h4><p>Frontend Developer</p></div>
+          <div class="team-badge"><div class="avatar">M</div><h4>Manish</h4><p>UI Designer</p></div>
+          <div class="team-badge"><div class="avatar">M</div><h4>Manoj</h4><p>Navigation Developer</p></div>
+          <div class="team-badge"><div class="avatar">N</div><h4>Nabin</h4><p>Database Developer</p></div>
+          <div class="team-badge"><div class="avatar">A</div><h4>Asok</h4><p>Tester &amp; Reviewer</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="view" id="view-contact">
+    <div class="wrap contact-section">
+      <h2 style="font-size:30px;margin-bottom:18px;">Get in Touch</h2>
+      <div class="contact-grid">
+        <div class="info-card">
+          <h3>Contact Details</h3>
+          <p style="color:var(--ink-soft);">Reach out for product enquiries, custom orders or support — we reply within one business day.</p>
+          <ul class="info-list">
+            <li><strong>Email:</strong> customersupport@popcultureclothing.com</li>
+            <li><strong>Phone:</strong> +61 2 9096 3750</li>
+            <li><strong>Location:</strong> Level 3, 136 Chalmers Street, Surry Hills, NSW 2010, Sydney, Australia.</li>
+          </ul>
+        </div>
+        <div class="form-card">
+          <h3>Send a Message</h3>
+          <div class="success-banner" id="contact-success">Message sent — our team replies within one business day.</div>
+          <form id="contact-form" novalidate>
+            <div class="form-row">
+              <label for="c-name">Name</label>
+              <input id="c-name" name="name" type="text" required placeholder="Enter your name">
+            </div>
+            <div class="form-row">
+              <label for="c-email">Email</label>
+              <input id="c-email" name="email" type="email" required placeholder="Enter your email">
+            </div>
+            <div class="form-row">
+              <label for="c-phone">Phone Number</label>
+              <input id="c-phone" name="phone" type="tel" required placeholder="Enter your phone number">
+            </div>
+            <div class="form-row">
+              <label for="c-subject">Subject</label>
+              <input id="c-subject" name="subject" type="text" placeholder="What do you want to discuss?">
+            </div>
+            <div class="form-row">
+              <label for="c-message">Message</label>
+              <textarea id="c-message" name="message" required placeholder="Write your message"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ADMIN -->
+  <section class="view" id="view-admin">
+    <div class="wrap admin-section">
+      <h2 style="font-size:30px;margin-bottom:18px;">Admin Dashboard</h2>
+
+      <div id="admin-login-panel">
+        <form class="admin-login" id="admin-login-form">
+          <div class="form-row">
+            <label for="admin-pass">Passcode</label>
+            <input id="admin-pass" type="password" required placeholder="Enter admin passcode">
+          </div>
+          <button type="submit" class="btn btn-primary">Log In</button>
+          <p class="admin-error" id="admin-error">Incorrect passcode. Try again.</p>
+          <p class="note">Demo passcode: <strong>popculture-admin</strong>. This is a client-side gate for demonstration purposes only — a production build needs real server-side authentication before going live.</p>
+        </form>
+      </div>
+
+      <div id="admin-panel" style="display:none;">
+        <div style="display:flex;justify-content:flex-end;margin-bottom:16px;">
+          <button class="admin-logout" id="admin-logout">Log Out</button>
+        </div>
+        <div class="stat-row">
+          <div class="stat-card"><div class="num" id="stat-skus">0</div><div class="label">Active SKUs</div></div>
+          <div class="stat-card"><div class="num" id="stat-units">0</div><div class="label">Units in Stock</div></div>
+          <div class="stat-card"><div class="num" id="stat-value">$0</div><div class="label">Inventory Value</div></div>
+        </div>
+        <div class="admin-table-wrap">
+          <table class="admin-table">
+            <thead>
+              <tr>
+                <th>Product</th><th>Collection</th><th>Price ($)</th><th>Stock</th><th>Status</th><th>Delete</th>
+              </tr>
+            </thead>
+            <tbody id="admin-table-body"></tbody>
+          </table>
+        </div>
+
+        <div class="add-product-card">
+          <h3>Add New Product</h3>
+          <form id="add-product-form" class="add-grid">
+            <div class="form-row">
+              <label for="np-name">Name</label>
+              <input id="np-name" type="text" required placeholder="Product name">
+            </div>
+            <div class="form-row">
+              <label for="np-cat">Collection</label>
+              <select id="np-cat"></select>
+            </div>
+            <div class="form-row">
+              <label for="np-price">Price ($)</label>
+              <input id="np-price" type="number" min="1" step="0.01" required placeholder="0.00">
+            </div>
+            <div class="form-row">
+              <label for="np-stock">Stock</label>
+              <input id="np-stock" type="number" min="0" step="1" required placeholder="0">
+            </div>
+            <div class="form-row">
+              <button type="submit" class="btn btn-primary">Add Product</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-grid">
+    <div>
+      <div class="word">POP CULTURE</div>
+      <p class="fine-print" style="margin-top:6px;">Modern fandom streetwear.</p>
+    </div>
+    <div class="footer-links">
+      <a href="#/home">Home</a>
+      <a href="#/shop">Shop</a>
+      <a href="#/about">About</a>
+      <a href="#/contact">Contact</a>
+      <a href="#/admin">Admin</a>
+    </div>
+  </div>
+  <div class="wrap">
+    <p class="fine-print">&copy; 2026 Pop Culture Clothing — Group 2, IT Capstone A. All rights reserved.</p>
+  </div>
+</footer>
+
+<!-- CART DRAWER -->
+<div class="overlay" id="overlay"></div>
+<aside class="cart-drawer" id="cart-drawer" role="dialog" aria-label="Shopping cart" aria-modal="true">
+  <div class="cart-drawer-header">
+    <h3>Your Cart</h3>
+    <button class="close-cart" id="close-cart" aria-label="Close cart">&times;</button>
+  </div>
+  <div class="cart-items" id="cart-items"></div>
+  <div class="cart-footer" id="cart-footer">
+    <div class="subtotal-row"><span>Subtotal</span><span id="cart-subtotal">$0.00</span></div>
+    <button class="btn btn-primary checkout-btn" id="checkout-btn">Checkout</button>
+  </div>
+</aside>
+
+<div id="toast" role="status" aria-live="polite"></div>
+
+<script>
+(function(){
+  "use strict";
+
+  /* ---------- DATA ---------- */
+  const CATEGORIES = [
+    { id:"scifi",  name:"Sci-Fi Saga",       cls:"cat-scifi"  },
+    { id:"cape",   name:"Cape & Cowl",       cls:"cat-cape"   },
+    { id:"bit",    name:"8-Bit Legends",     cls:"cat-bit"    },
+    { id:"arcane", name:"Arcane Academy",    cls:"cat-arcane" },
+    { id:"anime",  name:"Anime Underground", cls:"cat-anime"  },
+  ];
+  const SIZES = ["S","M","L","XL","XXL"];
+
+  let nextId = 13;
+  let products = [
+    p("Nova Strike Hoodie","scifi",68,24,"Heavyweight fleece hoodie with reflective seam piping.","PC-SF-001"),
+    p("Static Signal Tee","scifi",32,40,"Soft-wash cotton tee with a raised print.","PC-SF-002"),
+    p("Rebel Fleet Joggers","scifi",64,22,"Tapered joggers with utility side pockets.","PC-SF-003"),
+    p("Gotham Nights Bomber","cape",124,12,"Satin bomber jacket with ribbed trims.","PC-CC-001"),
+    p("Vigilante Cap","cape",28,60,"Structured 6-panel cap, adjustable strap.","PC-CC-002"),
+    p("Multiverse Patch Denim Jacket","cape",148,8,"Washed denim jacket with embroidered patches.","PC-CC-003"),
+    p("Thunder Pixel Crewneck","bit",58,30,"Midweight crewneck with pixel-gradient cuffs.","PC-BL-001"),
+    p("Trainer Track Jacket","bit",89,18,"Retro track jacket, colour-block panelling.","PC-BL-002"),
+    p("Enchanted Quill Cardigan","arcane",76,15,"Knit cardigan with brass-tone buttons.","PC-AA-001"),
+    p("House Crest Scarf","arcane",34,45,"Brushed knit scarf, fringed ends.","PC-AA-002"),
+    p("Neo Tokyo Windbreaker","anime",95,20,"Packable windbreaker with taped seams.","PC-AU-001"),
+    p("Katana Sleeve Tee","anime",30,50,"Relaxed-fit tee with sleeve print detail.","PC-AU-002"),
+  ];
+  function p(name,cat,price,stock,desc,sku){
+    return { id:nextId++, name, cat, price, stock, desc, sku, active:true };
+  }
+  // fix ids sequentially since nextId increments during literal eval oddly across closures
+  products.forEach((prod,i)=>{ prod.id = i+1; });
+  nextId = products.length + 1;
+
+  let cart = []; // {productId, size, qty}
+  let currentFilter = "all";
+  let searchTerm = "";
+  let sortMode = "default";
+  let adminLoggedIn = false;
+
+  const ADMIN_PASSCODE = "popculture-admin";
+
+  /* ---------- HELPERS ---------- */
+  const $ = (sel,ctx)=> (ctx||document).querySelector(sel);
+  const $$ = (sel,ctx)=> Array.from((ctx||document).querySelectorAll(sel));
+  const money = n => "$" + n.toFixed(2);
+  const catInfo = id => CATEGORIES.find(c=>c.id===id);
+
+  function toast(msg){
+    const t = $("#toast");
+    t.textContent = msg;
+    t.classList.add("show");
+    clearTimeout(toast._h);
+    toast._h = setTimeout(()=> t.classList.remove("show"), 2200);
+  }
+
+  /* ---------- ROUTER ---------- */
+  const views = ["home","shop","about","contact","admin"];
+  function route(){
+    let hash = location.hash.replace("#/","") || "home";
+    if(!views.includes(hash)) hash = "home";
+    views.forEach(v=>{
+      $("#view-"+v).classList.toggle("active", v===hash);
+    });
+    $$("nav.primary a, .admin-link").forEach(a=>{
+      a.classList.toggle("active", a.dataset.view === hash);
+    });
+    window.scrollTo({top:0, behavior:"instant" in document.documentElement.style ? "instant":"auto"});
+  }
+  window.addEventListener("hashchange", route);
+
+  /* ---------- HOME: collection chips ---------- */
+  function renderHomeCollections(){
+    $("#home-collections").innerHTML = CATEGORIES.map(c=>
+      `<a class="patch" href="#/shop" data-jump="${c.id}">${c.name}</a>`
+    ).join("");
+    $$("#home-collections .patch").forEach(el=>{
+      el.addEventListener("click",()=>{ currentFilter = el.dataset.jump; setTimeout(()=>renderShop(),0); });
+    });
+  }
+
+  /* ---------- SHOP ---------- */
+  function renderFilterChips(){
+    const chips = [{id:"all",name:"All"}].concat(CATEGORIES);
+    $("#filter-chips").innerHTML = chips.map(c=>
+      `<button data-cat="${c.id}" class="${c.id===currentFilter?'active':''}">${c.name}</button>`
+    ).join("");
+    $$("#filter-chips button").forEach(btn=>{
+      btn.addEventListener("click",()=>{
+        currentFilter = btn.dataset.cat;
+        renderShop();
+      });
+    });
+  }
+
+  function getFilteredProducts(){
+    let list = products.filter(pr=>pr.active);
+    if(currentFilter !== "all") list = list.filter(pr=>pr.cat===currentFilter);
+    if(searchTerm.trim()) {
+      const s = searchTerm.trim().toLowerCase();
+      list = list.filter(pr=> pr.name.toLowerCase().includes(s) || catInfo(pr.cat).name.toLowerCase().includes(s));
+    }
+    if(sortMode==="price-asc") list = list.slice().sort((a,b)=>a.price-b.price);
+    if(sortMode==="price-desc") list = list.slice().sort((a,b)=>b.price-a.price);
+    if(sortMode==="name-asc") list = list.slice().sort((a,b)=>a.name.localeCompare(b.name));
+    return list;
+  }
+
+  function renderShop(){
+    renderFilterChips();
+    const grid = $("#product-grid");
+    const list = getFilteredProducts();
+    if(list.length===0){
+      grid.innerHTML = `<div class="no-results">No products match your search — try a different collection or keyword.</div>`;
+      return;
+    }
+    grid.innerHTML = list.map(pr=>{
+      const c = catInfo(pr.cat);
+      const low = pr.stock <= 10 && pr.stock > 0;
+      const out = pr.stock === 0;
+      return `
+      <article class="ticket">
+        <div class="img ${c.cls}">
+          <span class="drop-tag">SKU ${pr.sku}</span>
+          <span class="cname">${c.name}</span>
+        </div>
+        <div class="body">
+          <h3>${pr.name}</h3>
+          <p class="desc">${pr.desc}</p>
+        </div>
+        <div class="perf"></div>
+        <div class="stub">
+          <div class="price-block">
+            <div class="price">${money(pr.price)}</div>
+            <div class="sku">DROP #${String(pr.id).padStart(3,'0')}</div>
+          </div>
+          <div class="stub-actions">
+            <select aria-label="Size" data-size-for="${pr.id}" ${out?"disabled":""}>
+              ${SIZES.map(sz=>`<option value="${sz}">${sz}</option>`).join("")}
+            </select>
+            <button class="add-btn" data-add="${pr.id}" ${out?"disabled":""}>${out?"Sold Out":"Add"}</button>
+          </div>
+        </div>
+        ${low?`<div class="stock-flag">Only ${pr.stock} left</div>`:""}
+      </article>`;
+    }).join("");
+
+    $$("[data-add]").forEach(btn=>{
+      btn.addEventListener("click",()=>{
+        const id = Number(btn.dataset.add);
+        const sizeSel = $(`[data-size-for="${id}"]`);
+        addToCart(id, sizeSel.value);
+      });
+    });
+  }
+
+  $("#search-input").addEventListener("input", e=>{ searchTerm = e.target.value; renderShop(); });
+  $("#sort-select").addEventListener("change", e=>{ sortMode = e.target.value; renderShop(); });
+
+  /* ---------- CART ---------- */
+  function addToCart(productId, size){
+    const prod = products.find(pr=>pr.id===productId);
+    if(!prod || prod.stock<=0) return;
+    const existing = cart.find(l=>l.productId===productId && l.size===size);
+    const inCartQty = existing ? existing.qty : 0;
+    if(inCartQty + 1 > prod.stock){
+      toast(`Only ${prod.stock} of ${prod.name} in stock.`);
+      return;
+    }
+    if(existing){ existing.qty += 1; }
+    else{ cart.push({ productId, size, qty:1 }); }
+    toast(`Added ${prod.name} (${size}) to cart`);
+    renderCart();
+  }
+
+  function changeQty(productId, size, delta){
+    const line = cart.find(l=>l.productId===productId && l.size===size);
+    if(!line) return;
+    const prod = products.find(pr=>pr.id===productId);
+    const newQty = line.qty + delta;
+    if(newQty <= 0){
+      cart = cart.filter(l=>!(l.productId===productId && l.size===size));
+    } else if(prod && newQty > prod.stock){
+      toast(`Only ${prod.stock} in stock.`);
+      return;
+    } else {
+      line.qty = newQty;
+    }
+    renderCart();
+  }
+
+  function removeLine(productId, size){
+    cart = cart.filter(l=>!(l.productId===productId && l.size===size));
+    renderCart();
+  }
+
+  function cartTotal(){
+    return cart.reduce((sum,l)=>{
+      const prod = products.find(pr=>pr.id===l.productId);
+      return sum + (prod ? prod.price*l.qty : 0);
+    },0);
+  }
+
+  function renderCart(){
+    const countEl = $("#cart-count");
+    const totalItems = cart.reduce((n,l)=>n+l.qty,0);
+    countEl.textContent = totalItems;
+
+    const itemsEl = $("#cart-items");
+    if(cart.length===0){
+      itemsEl.innerHTML = `<div class="cart-empty">Your cart is empty. Browse the <a href="#/shop">shop</a> to find your next piece.</div>`;
+    } else {
+      itemsEl.innerHTML = cart.map(l=>{
+        const prod = products.find(pr=>pr.id===l.productId);
+        if(!prod) return "";
+        const c = catInfo(prod.cat);
+        return `
+        <div class="cart-line">
+          <div class="swatch-sm ${c.cls}"></div>
+          <div class="info">
+            <div class="name">${prod.name}</div>
+            <div class="meta">Size ${l.size} · ${money(prod.price)}</div>
+            <div class="qty-stepper">
+              <button data-qty-minus data-pid="${prod.id}" data-size="${l.size}" aria-label="Decrease quantity">–</button>
+              <span>${l.qty}</span>
+              <button data-qty-plus data-pid="${prod.id}" data-size="${l.size}" aria-label="Increase quantity">+</button>
+              <button class="remove-line" data-remove data-pid="${prod.id}" data-size="${l.size}">Remove</button>
+            </div>
+          </div>
+        </div>`;
+      }).join("");
+    }
+    $("#cart-subtotal").textContent = money(cartTotal());
+    $("#cart-footer").style.display = cart.length===0 ? "none" : "block";
+
+    $$("[data-qty-minus]", itemsEl).forEach(b=> b.addEventListener("click",()=> changeQty(Number(b.dataset.pid), b.dataset.size, -1)));
+    $$("[data-qty-plus]", itemsEl).forEach(b=> b.addEventListener("click",()=> changeQty(Number(b.dataset.pid), b.dataset.size, 1)));
+    $$("[data-remove]", itemsEl).forEach(b=> b.addEventListener("click",()=> removeLine(Number(b.dataset.pid), b.dataset.size)));
+  }
+
+  function openCart(){
+    $("#cart-drawer").classList.add("open");
+    $("#overlay").classList.add("show");
+  }
+  function closeCart(){
+    $("#cart-drawer").classList.remove("open");
+    $("#overlay").classList.remove("show");
+  }
+  $("#open-cart").addEventListener("click", openCart);
+  $("#close-cart").addEventListener("click", closeCart);
+  $("#overlay").addEventListener("click", closeCart);
+  document.addEventListener("keydown", e=>{ if(e.key==="Escape") closeCart(); });
+
+  $("#checkout-btn").addEventListener("click", ()=>{
+    if(cart.length===0) return;
+    // decrement stock
+    cart.forEach(l=>{
+      const prod = products.find(pr=>pr.id===l.productId);
+      if(prod) prod.stock = Math.max(0, prod.stock - l.qty);
+    });
+    const orderNum = "PC" + Math.floor(100000 + Math.random()*899999);
+    $("#cart-items").innerHTML = `
+      <div class="order-confirm">
+        <h3 style="font-size:22px;">Order Confirmed</h3>
+        <div class="num">#${orderNum}</div>
+        <p style="color:var(--gray);">Thanks for shopping Pop Culture. A confirmation would normally be emailed from here.</p>
+      </div>`;
+    $("#cart-footer").style.display = "none";
+    cart = [];
+    $("#cart-count").textContent = "0";
+    renderShop();
+    if(adminLoggedIn) renderAdmin();
+  });
+
+  /* ---------- ABOUT (static, no JS needed beyond markup already in HTML) ---------- */
+
+  /* ---------- CONTACT ---------- */
+  $("#contact-form").addEventListener("submit", e=>{
+    e.preventDefault();
+    const form = e.target;
+    if(!form.checkValidity()){ form.reportValidity(); return; }
+    $("#contact-success").classList.add("show");
+    form.reset();
+    setTimeout(()=> $("#contact-success").classList.remove("show"), 5000);
+  });
+
+  /* ---------- ADMIN ---------- */
+  $("#admin-login-form").addEventListener("submit", e=>{
+    e.preventDefault();
+    const val = $("#admin-pass").value;
+    if(val === ADMIN_PASSCODE){
+      adminLoggedIn = true;
+      $("#admin-login-panel").style.display = "none";
+      $("#admin-panel").style.display = "block";
+      $("#admin-error").classList.remove("show");
+      $("#admin-pass").value = "";
+      renderAdmin();
+    } else {
+      $("#admin-error").classList.add("show");
+    }
+  });
+  $("#admin-logout").addEventListener("click", ()=>{
+    adminLoggedIn = false;
+    $("#admin-panel").style.display = "none";
+    $("#admin-login-panel").style.display = "block";
+  });
+
+  function renderAdminStats(){
+    const activeProducts = products.filter(pr=>pr.active);
+    $("#stat-skus").textContent = activeProducts.length;
+    const units = products.reduce((n,pr)=>n+pr.stock,0);
+    $("#stat-units").textContent = units;
+    const value = products.reduce((n,pr)=>n+pr.stock*pr.price,0);
+    $("#stat-value").textContent = "$" + value.toLocaleString(undefined,{maximumFractionDigits:0});
+  }
+
+  function renderAdmin(){
+    renderAdminStats();
+    const body = $("#admin-table-body");
+    body.innerHTML = products.map(pr=>{
+      const c = catInfo(pr.cat);
+      return `
+      <tr data-row="${pr.id}">
+        <td>${pr.name}</td>
+        <td>${c.name}</td>
+        <td><input type="number" min="1" step="0.01" value="${pr.price}" data-field="price" data-pid="${pr.id}"></td>
+        <td><input type="number" min="0" step="1" value="${pr.stock}" data-field="stock" data-pid="${pr.id}"></td>
+        <td><button class="status-pill ${pr.active?'':'hidden-state'}" data-toggle="${pr.id}">${pr.active?"Active":"Hidden"}</button></td>
+        <td><button class="del-btn" data-del="${pr.id}">Delete</button></td>
+      </tr>`;
+    }).join("");
+
+    $$("[data-field]", body).forEach(inp=>{
+      inp.addEventListener("input", ()=>{
+        const pid = Number(inp.dataset.pid);
+        const field = inp.dataset.field;
+        const prod = products.find(pr=>pr.id===pid);
+        if(!prod) return;
+        let v = Number(inp.value);
+        if(isNaN(v) || v < 0) v = 0;
+        prod[field] = v;
+        renderAdminStats();
+        renderShop();
+      });
+    });
+    $$("[data-toggle]", body).forEach(btn=>{
+      btn.addEventListener("click", ()=>{
+        const pid = Number(btn.dataset.toggle);
+        const prod = products.find(pr=>pr.id===pid);
+        if(!prod) return;
+        prod.active = !prod.active;
+        renderAdmin();
+        renderShop();
+      });
+    });
+    $$("[data-del]", body).forEach(btn=>{
+      btn.addEventListener("click", ()=>{
+        const pid = Number(btn.dataset.del);
+        if(!confirm("Delete this product? This cannot be undone.")) return;
+        products = products.filter(pr=>pr.id!==pid);
+        cart = cart.filter(l=>l.productId!==pid);
+        renderAdmin();
+        renderShop();
+        renderCart();
+      });
+    });
+  }
+
+  // populate collection select on add-product form
+  $("#np-cat").innerHTML = CATEGORIES.map(c=>`<option value="${c.id}">${c.name}</option>`).join("");
+  $("#add-product-form").addEventListener("submit", e=>{
+    e.preventDefault();
+    const name = $("#np-name").value.trim();
+    const cat = $("#np-cat").value;
+    const price = Number($("#np-price").value);
+    const stock = Number($("#np-stock").value);
+    if(!name || !price || price<=0) { toast("Enter a valid name and price."); return; }
+    const sku = "PC-" + cat.slice(0,2).toUpperCase() + "-" + String(nextId).padStart(3,"0");
+    products.push({ id:nextId++, name, cat, price, stock: stock||0, desc:"New arrival — added via admin dashboard.", sku, active:true });
+    e.target.reset();
+    toast(`${name} added to catalogue`);
+    renderAdmin();
+    renderShop();
+  });
+
+  /* ---------- INIT ---------- */
+  renderHomeCollections();
+  renderShop();
+  renderCart();
+  route();
+})();
+</script>
+</body>
+</html>
