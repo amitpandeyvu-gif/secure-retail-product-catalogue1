@@ -55,7 +55,7 @@ The aim is to provide customers with an easy-to-use online product catalogue whi
 | Manish | UI Designer |
 | Manoj | GitHub Collaboration |
 | Nabin | Developer |
-| Ashok | Code Reviewer |
+| Asok | Code Reviewer |
 
 ---
 
